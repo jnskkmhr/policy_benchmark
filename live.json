@@ -1,6 +1,6 @@
 {
-  "updated_utc": "2026-10-23 03:40:07 UTC",
-  "completed": 15,
+  "updated_utc": "2026-10-23 03:41:45 UTC",
+  "completed": 17,
   "total": 72,
   "campaign": "four_policy_20261022",
   "rows": [
@@ -408,11 +408,66 @@
       "swing_lift_cm_mean": 18.94449727535248,
       "swing_lift_cm_std": 7.013745490322877,
       "terrain": "ascending"
+    },
+    {
+      "policy": "scratch",
+      "material": "basalt_like",
+      "seed": 42,
+      "outcome": "terminated",
+      "duration_s": 10.040000000000001,
+      "terminal_terms": "outside_workspace",
+      "sand_time_s": 7.7,
+      "sand_progress_m": 3.2895465791225433,
+      "step_count": 22,
+      "swing_count": 23,
+      "vx_rmse": 0.6299853324890137,
+      "vx_mean": 0.4160172641277313,
+      "vy_rmse": 0.17196425795555115,
+      "vy_mean": 0.07281951606273651,
+      "wz_rmse": 0.9503009915351868,
+      "wz_mean": 0.0027101256418973207,
+      "step_duration_s_mean": 0.3054545454545454,
+      "step_duration_s_std": 0.10974049027870955,
+      "step_length_m_mean": 0.14184452051466162,
+      "step_length_m_std": 0.11095122165430517,
+      "clearance_cm_mean": 11.632160518480372,
+      "clearance_cm_std": 4.501982139285679,
+      "swing_lift_cm_mean": 9.889669651570527,
+      "swing_lift_cm_std": 4.018199643607812,
+      "terrain": "ascending"
+    },
+    {
+      "policy": "soft_contact",
+      "material": "mild_sand",
+      "seed": 42,
+      "outcome": "terminated",
+      "duration_s": 3.18,
+      "terminal_terms": "base_too_low",
+      "sand_time_s": 0.4,
+      "sand_progress_m": 1.1700406074523926,
+      "step_count": 0,
+      "swing_count": 0,
+      "vx_rmse": 0.5128190517425537,
+      "vx_mean": 1.4471622705459595,
+      "vy_rmse": 0.1536981463432312,
+      "vy_mean": 0.0051419795490801334,
+      "wz_rmse": 3.278927803039551,
+      "wz_mean": 0.9040849804878235,
+      "step_duration_s_mean": null,
+      "step_duration_s_std": null,
+      "step_length_m_mean": null,
+      "step_length_m_std": null,
+      "clearance_cm_mean": null,
+      "clearance_cm_std": null,
+      "swing_lift_cm_mean": null,
+      "swing_lift_cm_std": null,
+      "terrain": "ascending"
     }
   ],
   "comparisons": [
     "videos/four_policy_20261022/flat/comparison_basalt_like.mp4",
     "videos/four_policy_20261022/flat/comparison_soft_sand.mp4",
-    "videos/four_policy_20261022/flat/comparison_mild_sand.mp4"
+    "videos/four_policy_20261022/flat/comparison_mild_sand.mp4",
+    "videos/four_policy_20261022/ascending/comparison_basalt_like.mp4"
   ]
 }
