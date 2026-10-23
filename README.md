@@ -1,15 +1,19 @@
-# Private policy benchmark
+# Policy benchmark
 
 Live results for four G1 policies, six MPM Play tasks, and three materials.
 
-Open `index.html` through an HTTP server. On the simulation machine:
+Public website: **https://jnskkmhr.github.io/policy_benchmark/**
+
+GitHub Pages automatically publishes the current campaign from `live-results`. Older campaigns remain available in this repository.
+
+For a local preview, open `index.html` through an HTTP server. On the simulation machine:
 
 ```bash
 python3 -m http.server 8765 --bind 127.0.0.1 --directory /home/jkamohara/isaac/policy_benchmark
 ```
 
 In VS Code connected over SSH, open **Ports → Forward a Port → 8765**, then open the forwarded address.
-The server listens only on localhost. Do not publish this repository with public GitHub Pages.
+The local preview server listens only on localhost.
 
 The page refreshes results every 30 seconds. New completed rollouts are exported and pushed periodically while the benchmark runs.
 Checkpoint weights and W&B credentials are excluded.

@@ -1,0 +1,51 @@
+name: Publish benchmark website
+
+on:
+  push:
+    branches: [live-results]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/configure-pages@v5
+      - name: Prepare current campaign
+        run: |
+          python3 - <<'PYTHON'
+          import json
+          import shutil
+          from pathlib import Path
+
+          campaign = json.loads(Path("live.json").read_text())["campaign"]
+          assert Path(campaign).name == campaign and campaign not in (".", "..")
+          site = Path("_site")
+          site.mkdir()
+          for name in ("index.html", "live.json"):
+              shutil.copy2(name, site / name)
+          for name in ("data", "videos"):
+              shutil.copytree(Path(name) / campaign, site / name / campaign)
+          (site / ".nojekyll").touch()
+          size = sum(path.stat().st_size for path in site.rglob("*") if path.is_file())
+          print(f"Publishing {campaign}: {size / 1024**2:.1f} MiB")
+          assert size < 1024**3, "Current campaign exceeds the Pages site size limit"
+          PYTHON
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
