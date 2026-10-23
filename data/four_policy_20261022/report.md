@@ -1,6 +1,6 @@
 # Four-policy MPM benchmark — 22 October 2026
 
-**Recorded 71 of 72 conditions:** four policies × three materials × six Play tasks.
+**Recorded 72 of 72 conditions:** four policies × three materials × six Play tasks.
 
 ## Results
 
@@ -12,7 +12,7 @@ A completed crossing reaches the far side of the sand bed. A completed tilting t
 | [ascending](ascending/report.md) | 0/3 | 1/3 | 0/3 | 1/3 |
 | [descending](descending/report.md) | 0/3 | 0/3 | 1/3 | 1/3 |
 | [dune](dune/report.md) | 1/3 | 3/3 | 2/3 | 2/3 |
-| [standing tilt](standing_tilt/report.md) | 0/3 | 0/3 | 2/3 | 2/2 recorded |
+| [standing tilt](standing_tilt/report.md) | 0/3 | 0/3 | 2/3 | 3/3 |
 | [walking tilt](walking_tilt/report.md) | 1/3 | 3/3 | 3/3 | 3/3 |
 
 **Failures and stops:**
