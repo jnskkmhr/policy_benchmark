@@ -7,8 +7,10 @@ One episode per policy/material, seed 42. Early terminations remain included.
 | Material | Policy | Outcome | Duration (s) | Sand window (s) | vx RMSE (m/s) | vy RMSE (m/s) | wz RMSE (rad/s) |
 |---|---|---|---:|---:|---:|---:|---:|
 | Stiff cohesive | Reduced order (no87uwhe) | Stopped: bad_orientation | 6.080 | 5.580 | 0.323 | 0.202 | 0.401 |
+| Mild sand | Reduced order (no87uwhe) | Stopped: outside_workspace | 2.660 | 2.160 | 0.860 | 0.105 | 1.071 |
 | Mild sand | MPM scratch | time limit | 30.000 | 29.500 | 0.077 | 0.064 | 0.267 |
 | Soft sand | Reduced order (no87uwhe) | Stopped: outside_workspace | 2.460 | 1.960 | 0.845 | 0.080 | 1.075 |
+| Soft sand | MPM flat finetune | time limit | 30.000 | 29.500 | 0.128 | 0.102 | 0.312 |
 
 ![Tracking](tracking.png)
 
@@ -17,8 +19,10 @@ One episode per policy/material, seed 42. Early terminations remain included.
 | Material | Policy | Steps / swings | Step duration (s) | Signed X step length (m) | Clearance (cm) | Swing lift (cm) |
 |---|---|---:|---:|---:|---:|---:|
 | Stiff cohesive | Reduced order (no87uwhe) | 8 / 10 | 0.242 ± 0.114 | 0.078 ± 0.178 | 8.162 ± 3.056 | 6.781 ± 3.073 |
+| Mild sand | Reduced order (no87uwhe) | 1 / 2 | 0.200 ± 0.000 | 0.523 ± 0.000 | 5.923 ± 1.429 | 2.064 ± 2.064 |
 | Mild sand | MPM scratch | 68 / 69 | 0.430 ± 0.073 | 0.006 ± 0.118 | -3.138 ± 3.300 | 12.062 ± 3.978 |
 | Soft sand | Reduced order (no87uwhe) | 0 / 0 | — | — | — | — |
+| Soft sand | MPM flat finetune | 22 / 30 | 0.597 ± 1.307 | 0.027 ± 0.102 | -12.358 ± 3.218 | 6.380 ± 3.535 |
 
 ![Gait](gait.png)
 
