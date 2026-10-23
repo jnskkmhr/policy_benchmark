@@ -2,7 +2,7 @@
 
 Replaces the previous camera-obstructed recordings. The reduced-order policy is now `no87uwhe`. All results below come from new rollouts; the previous campaign is retained separately.
 
-**Recorded 33 of 72 conditions:** four policies × three materials × six Play tasks.
+**Recorded 41 of 72 conditions:** four policies × three materials × six Play tasks.
 
 ## Results
 
@@ -12,16 +12,16 @@ A completed crossing reaches the far side of the sand bed. A completed tilting t
 |---|---:|---:|---:|---:|
 | [flat](flat/report.md) | 0/0 recorded | 0/0 recorded | 0/0 recorded | 0/0 recorded |
 | [ascending](ascending/report.md) | 0/3 | 0/3 | 1/3 | 2/3 |
-| [descending](descending/report.md) | 1/2 recorded | 1/2 recorded | 0/1 recorded | 0/1 recorded |
+| [descending](descending/report.md) | 1/3 | 1/3 | 1/3 | 1/2 recorded |
 | [dune](dune/report.md) | 0/0 recorded | 0/0 recorded | 0/0 recorded | 0/0 recorded |
 | [standing tilt](standing_tilt/report.md) | 0/3 | 1/3 | 2/3 | 3/3 |
-| [walking tilt](walking_tilt/report.md) | 1/1 recorded | 1/1 recorded | 1/1 recorded | 0/0 recorded |
+| [walking tilt](walking_tilt/report.md) | 1/2 recorded | 2/2 recorded | 1/1 recorded | 1/1 recorded |
 
 **Failures and stops:**
 
-- **Reduced order (no87uwhe):** ascending/basalt_like: Stopped: bad_orientation at 4.20 s; ascending/mild_sand: Stopped: bad_orientation at 3.46 s; ascending/soft_sand: Stopped: bad_orientation at 3.12 s; descending/mild_sand: Stopped: bad_orientation at 4.68 s; standing_tilt/basalt_like: Stopped: bad_orientation at 5.44 s; standing_tilt/mild_sand: Stopped: outside_workspace at 2.32 s; standing_tilt/soft_sand: Stopped: outside_workspace at 2.78 s
-- **MPM flat finetune:** ascending/basalt_like: time limit at 13.00 s; ascending/mild_sand: Stopped: outside_workspace at 5.32 s; ascending/soft_sand: solver capacity error at 4.58 s; descending/basalt_like: Stopped: bad_orientation at 4.18 s; standing_tilt/mild_sand: Stopped: outside_workspace at 25.72 s; standing_tilt/soft_sand: Stopped: outside_workspace at 6.82 s
-- **MPM rough finetune:** ascending/basalt_like: Stopped: outside_workspace at 8.34 s; ascending/soft_sand: solver capacity error at 4.60 s; descending/basalt_like: Stopped: outside_workspace at 3.24 s; standing_tilt/soft_sand: Stopped: outside_workspace at 19.74 s
+- **Reduced order (no87uwhe):** ascending/basalt_like: Stopped: bad_orientation at 4.20 s; ascending/mild_sand: Stopped: bad_orientation at 3.46 s; ascending/soft_sand: Stopped: bad_orientation at 3.12 s; descending/mild_sand: Stopped: bad_orientation at 4.68 s; descending/soft_sand: Stopped: outside_workspace at 4.60 s; standing_tilt/basalt_like: Stopped: bad_orientation at 5.44 s; standing_tilt/mild_sand: Stopped: outside_workspace at 2.32 s; standing_tilt/soft_sand: Stopped: outside_workspace at 2.78 s; walking_tilt/mild_sand: Stopped: outside_workspace at 2.68 s
+- **MPM flat finetune:** ascending/basalt_like: time limit at 13.00 s; ascending/mild_sand: Stopped: outside_workspace at 5.32 s; ascending/soft_sand: solver capacity error at 4.58 s; descending/basalt_like: Stopped: bad_orientation at 4.18 s; descending/soft_sand: Stopped: bad_orientation at 4.20 s; standing_tilt/mild_sand: Stopped: outside_workspace at 25.72 s; standing_tilt/soft_sand: Stopped: outside_workspace at 6.82 s
+- **MPM rough finetune:** ascending/basalt_like: Stopped: outside_workspace at 8.34 s; ascending/soft_sand: solver capacity error at 4.60 s; descending/basalt_like: Stopped: outside_workspace at 3.24 s; descending/soft_sand: Stopped: bad_orientation at 3.26 s; standing_tilt/soft_sand: Stopped: outside_workspace at 19.74 s
 - **MPM scratch:** ascending/soft_sand: solver capacity error at 4.52 s; descending/basalt_like: Stopped: bad_orientation at 4.98 s
 
 Per-task reports above contain every RMSE, step measurement, individual video, and 2×2 comparison.
