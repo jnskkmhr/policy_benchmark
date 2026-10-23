@@ -1,6 +1,6 @@
 # Four-policy MPM benchmark — 22 October 2026
 
-**Recorded 13 of 72 conditions:** four policies × three materials × six Play tasks.
+**Recorded 15 of 72 conditions:** four policies × three materials × six Play tasks.
 
 ## Results
 
@@ -9,7 +9,7 @@ A completed crossing reaches the far side of the sand bed. A completed tilting t
 | Task | Reduced order | MPM flat finetune | MPM rough finetune | MPM scratch |
 |---|---:|---:|---:|---:|
 | [flat](flat/report.md) | 1/3 | 3/3 | 3/3 | 3/3 |
-| [ascending](ascending/report.md) | 0/1 recorded | 0/0 recorded | 0/0 recorded | 0/0 recorded |
+| [ascending](ascending/report.md) | 0/1 recorded | 0/1 recorded | 0/1 recorded | 0/0 recorded |
 | [descending](descending/report.md) | 0/0 recorded | 0/0 recorded | 0/0 recorded | 0/0 recorded |
 | [dune](dune/report.md) | 0/0 recorded | 0/0 recorded | 0/0 recorded | 0/0 recorded |
 | [standing tilt](standing_tilt/report.md) | 0/0 recorded | 0/0 recorded | 0/0 recorded | 0/0 recorded |
@@ -18,7 +18,7 @@ A completed crossing reaches the far side of the sand bed. A completed tilting t
 **Failures and stops:**
 
 - **Reduced order:** flat/mild_sand: Stopped: outside_workspace at 5.08 s; flat/soft_sand: Stopped: bad_orientation at 3.44 s; ascending/basalt_like: Stopped: bad_orientation at 3.08 s
-- **MPM flat finetune:** No recorded failures.
+- **MPM flat finetune:** ascending/basalt_like: Stopped: outside_workspace at 12.84 s
 - **MPM rough finetune:** No recorded failures.
 - **MPM scratch:** No recorded failures.
 
@@ -70,4 +70,4 @@ uv run --no-sync python source/isaaclab_tasks/isaaclab_tasks/contrib/g1_29dof_mp
 ```
 
 The runner resumes by skipping completed conditions. To rerun a condition, use a fresh campaign directory. `--prepare` resolves the latest W&B checkpoint again; the supplied manifest is the frozen record for these results.
-[Dependency versions and source hashes](provenance.json) · [Tracked source diff](tracked_changes.patch).
+[Dependency versions and source hashes](provenance.json).

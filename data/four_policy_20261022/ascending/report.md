@@ -7,6 +7,8 @@ One episode per policy/material, seed 42. Early terminations remain included.
 | Material | Policy | Outcome | Duration (s) | Sand window (s) | vx RMSE (m/s) | vy RMSE (m/s) | wz RMSE (rad/s) |
 |---|---|---|---:|---:|---:|---:|---:|
 | Stiff cohesive | Reduced order | Stopped: bad_orientation | 3.080 | 0.300 | 1.122 | 0.273 | 2.668 |
+| Stiff cohesive | MPM flat finetune | Stopped: outside_workspace | 12.840 | 10.220 | 0.976 | 0.128 | 0.764 |
+| Stiff cohesive | MPM rough finetune | time limit | 13.000 | 8.680 | 0.926 | 0.171 | 0.841 |
 
 ![Tracking](tracking.png)
 
@@ -15,6 +17,8 @@ One episode per policy/material, seed 42. Early terminations remain included.
 | Material | Policy | Steps / swings | Step duration (s) | Signed X step length (m) | Clearance (cm) | Swing lift (cm) |
 |---|---|---:|---:|---:|---:|---:|
 | Stiff cohesive | Reduced order | 0 / 0 | — | — | — | — |
+| Stiff cohesive | MPM flat finetune | 42 / 42 | 0.236 ± 0.038 | 0.007 ± 0.059 | 13.285 ± 2.390 | 13.434 ± 2.497 |
+| Stiff cohesive | MPM rough finetune | 25 / 25 | 0.314 ± 0.080 | 0.051 ± 0.150 | 19.525 ± 6.605 | 18.944 ± 7.014 |
 
 ![Gait](gait.png)
 
