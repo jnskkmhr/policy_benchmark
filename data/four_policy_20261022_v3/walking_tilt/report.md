@@ -7,6 +7,7 @@ One episode per policy/material, seed 42. Early terminations remain included.
 | Material | Policy | Outcome | Duration (s) | Sand window (s) | vx RMSE (m/s) | vy RMSE (m/s) | wz RMSE (rad/s) |
 |---|---|---|---:|---:|---:|---:|---:|
 | Mild sand | MPM scratch | time limit | 30.000 | 29.500 | 0.077 | 0.064 | 0.267 |
+| Soft sand | Reduced order (no87uwhe) | Stopped: outside_workspace | 2.460 | 1.960 | 0.845 | 0.080 | 1.075 |
 
 ![Tracking](tracking.png)
 
@@ -15,6 +16,7 @@ One episode per policy/material, seed 42. Early terminations remain included.
 | Material | Policy | Steps / swings | Step duration (s) | Signed X step length (m) | Clearance (cm) | Swing lift (cm) |
 |---|---|---:|---:|---:|---:|---:|
 | Mild sand | MPM scratch | 68 / 69 | 0.430 ± 0.073 | 0.006 ± 0.118 | -3.138 ± 3.300 | 12.062 ± 3.978 |
+| Soft sand | Reduced order (no87uwhe) | 0 / 0 | — | — | — | — |
 
 ![Gait](gait.png)
 
