@@ -2,7 +2,7 @@
 
 Replaces the previous camera-obstructed recordings. The reduced-order policy is now `no87uwhe`. All results below come from new rollouts; the previous campaign is retained separately.
 
-**Recorded 30 of 72 conditions:** four policies × three materials × six Play tasks.
+**Recorded 31 of 72 conditions:** four policies × three materials × six Play tasks.
 
 ## Results
 
@@ -14,7 +14,7 @@ A completed crossing reaches the far side of the sand bed. A completed tilting t
 | [ascending](ascending/report.md) | 0/3 | 0/3 | 1/3 | 2/3 |
 | [descending](descending/report.md) | 1/2 recorded | 1/2 recorded | 1/2 recorded | 0/1 recorded |
 | [dune](dune/report.md) | 0/0 recorded | 0/0 recorded | 0/0 recorded | 0/0 recorded |
-| [standing tilt](standing_tilt/report.md) | 0/3 | 1/3 | 2/3 | 2/2 recorded |
+| [standing tilt](standing_tilt/report.md) | 0/3 | 1/3 | 2/3 | 3/3 |
 | [walking tilt](walking_tilt/report.md) | 0/0 recorded | 0/0 recorded | 0/0 recorded | 0/0 recorded |
 
 **Failures and stops:**
@@ -84,3 +84,4 @@ These additional trials increase leaf-node allocation from 8,192 to 32,768; phys
 |---|---|---|---|---:|---|
 | ascending | mpm_flat | soft_sand | terminated: outside_workspace | 9.30 | [Metadata](capacity_retries/ascending/soft_sand__mpm_flat__seed42/metadata.json) · [Video](../../videos/four_policy_20261022_v2/capacity_retries/ascending/soft_sand__mpm_flat__seed42/rollout.mp4) |
 | ascending | mpm_rough | soft_sand | terminated: outside_workspace | 9.36 | [Metadata](capacity_retries/ascending/soft_sand__mpm_rough__seed42/metadata.json) · [Video](../../videos/four_policy_20261022_v2/capacity_retries/ascending/soft_sand__mpm_rough__seed42/rollout.mp4) |
+| ascending | scratch | soft_sand | terminated: outside_workspace | 10.44 | [Metadata](capacity_retries/ascending/soft_sand__scratch__seed42/metadata.json) · [Video](../../videos/four_policy_20261022_v2/capacity_retries/ascending/soft_sand__scratch__seed42/rollout.mp4) |

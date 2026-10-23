@@ -20,5 +20,16 @@
       "outside_workspace"
     ],
     "artifact_path": "capacity_retries/ascending/soft_sand__mpm_rough__seed42"
+  },
+  {
+    "terrain": "ascending",
+    "policy": "scratch",
+    "material": "soft_sand",
+    "outcome": "terminated",
+    "duration_s": 10.44,
+    "terminal_terms": [
+      "outside_workspace"
+    ],
+    "artifact_path": "capacity_retries/ascending/soft_sand__scratch__seed42"
   }
 ]
