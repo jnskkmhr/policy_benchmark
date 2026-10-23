@@ -1,0 +1,13 @@
+{
+  "steps": [],
+  "swings": [
+    {
+      "foot": 1,
+      "start_s": 2.04,
+      "end_s": 2.12,
+      "swing_duration_s": 0.08000000000000007,
+      "clearance_cm": 2.966549873352051,
+      "swing_lift_cm": 4.573068141937256
+    }
+  ]
+}
