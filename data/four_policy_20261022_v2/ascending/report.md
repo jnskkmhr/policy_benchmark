@@ -15,6 +15,9 @@ One episode per policy/material, seed 42. Early terminations remain included.
 | Mild sand | MPM rough finetune | crossed sand bed | 9.300 | 6.820 | 0.244 | 0.102 | 0.947 |
 | Mild sand | MPM scratch | crossed sand bed | 10.280 | 7.860 | 0.332 | 0.064 | 0.666 |
 | Soft sand | Reduced order (no87uwhe) | Stopped: bad_orientation | 3.120 | 0.520 | 0.681 | 0.294 | 3.832 |
+| Soft sand | MPM flat finetune | solver capacity error | 4.580 | 1.900 | 0.550 | 0.067 | 0.929 |
+| Soft sand | MPM rough finetune | solver capacity error | 4.600 | 1.960 | 0.431 | 0.061 | 0.579 |
+| Soft sand | MPM scratch | solver capacity error | 4.520 | 2.000 | 0.508 | 0.065 | 0.707 |
 
 ![Tracking](tracking.png)
 
@@ -31,6 +34,9 @@ One episode per policy/material, seed 42. Early terminations remain included.
 | Mild sand | MPM rough finetune | 28 / 28 | 0.237 ± 0.017 | 0.185 ± 0.031 | -0.921 ± 2.411 | 7.766 ± 6.482 |
 | Mild sand | MPM scratch | 33 / 33 | 0.228 ± 0.016 | 0.154 ± 0.028 | -1.952 ± 3.932 | 7.345 ± 5.671 |
 | Soft sand | Reduced order (no87uwhe) | 0 / 1 | — | — | 0.149 ± 0.000 | 0.000 ± 0.000 |
+| Soft sand | MPM flat finetune | 5 / 6 | 0.236 ± 0.070 | 0.060 ± 0.106 | -5.055 ± 4.956 | 13.138 ± 6.619 |
+| Soft sand | MPM rough finetune | 5 / 6 | 0.320 ± 0.063 | 0.166 ± 0.058 | -6.198 ± 5.736 | 3.293 ± 1.867 |
+| Soft sand | MPM scratch | 4 / 5 | 0.320 ± 0.051 | 0.193 ± 0.195 | -7.420 ± 7.047 | 3.834 ± 2.106 |
 
 ![Gait](gait.png)
 

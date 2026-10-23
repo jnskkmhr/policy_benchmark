@@ -1,3 +1,5 @@
+> **Superseded:** some camera views in this campaign obscure the robot. [Corrected recordings and policy no87uwhe](../four_policy_20261022_v2/report.md) are being published separately. The previous artifact checks covered file integrity and timing, not camera visibility.
+
 # Four-policy MPM benchmark — 22 October 2026
 
 **Recorded 72 of 72 conditions:** four policies × three materials × six Play tasks.

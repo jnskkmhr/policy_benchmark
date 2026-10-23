@@ -1,0 +1,89 @@
+{
+  "steps": [
+    {
+      "foot": 0,
+      "start_s": 2.7600000000000002,
+      "end_s": 2.98,
+      "step_duration_s": 0.21999999999999975,
+      "step_length_m": 0.07386136054992676
+    },
+    {
+      "foot": 1,
+      "start_s": 2.98,
+      "end_s": 3.3200000000000003,
+      "step_duration_s": 0.3400000000000003,
+      "step_length_m": 0.236114501953125
+    },
+    {
+      "foot": 0,
+      "start_s": 3.3200000000000003,
+      "end_s": 3.72,
+      "step_duration_s": 0.3999999999999999,
+      "step_length_m": 0.12537527084350586
+    },
+    {
+      "foot": 1,
+      "start_s": 3.72,
+      "end_s": 4.0,
+      "step_duration_s": 0.2799999999999998,
+      "step_length_m": 0.20037555694580078
+    },
+    {
+      "foot": 0,
+      "start_s": 4.0,
+      "end_s": 4.36,
+      "step_duration_s": 0.3600000000000003,
+      "step_length_m": 0.19383704662322998
+    }
+  ],
+  "swings": [
+    {
+      "foot": 0,
+      "start_s": 2.84,
+      "end_s": 2.98,
+      "swing_duration_s": 0.14000000000000012,
+      "clearance_cm": -3.693517148494724,
+      "swing_lift_cm": 3.4843797981739035
+    },
+    {
+      "foot": 0,
+      "start_s": 3.42,
+      "end_s": 3.72,
+      "swing_duration_s": 0.30000000000000027,
+      "clearance_cm": -9.09667313098908,
+      "swing_lift_cm": 2.8049153089523324
+    },
+    {
+      "foot": 0,
+      "start_s": 4.1,
+      "end_s": 4.36,
+      "swing_duration_s": 0.2600000000000007,
+      "clearance_cm": -10.849895477294929,
+      "swing_lift_cm": 2.0723360776901236
+    },
+    {
+      "foot": 1,
+      "start_s": 2.66,
+      "end_s": 2.7600000000000002,
+      "swing_duration_s": 0.10000000000000009,
+      "clearance_cm": 4.3420672416686985,
+      "swing_lift_cm": 0.30449002981185885
+    },
+    {
+      "foot": 1,
+      "start_s": 3.1,
+      "end_s": 3.3200000000000003,
+      "swing_duration_s": 0.2200000000000002,
+      "clearance_cm": -4.767147898674018,
+      "swing_lift_cm": 5.7427948713302595
+    },
+    {
+      "foot": 1,
+      "start_s": 3.7600000000000002,
+      "end_s": 4.0,
+      "swing_duration_s": 0.23999999999999977,
+      "clearance_cm": -13.121455311775215,
+      "swing_lift_cm": 5.347563922405241
+    }
+  ]
+}
