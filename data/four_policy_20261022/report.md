@@ -1,6 +1,6 @@
 # Four-policy MPM benchmark — 22 October 2026
 
-**Recorded 17 of 72 conditions:** four policies × three materials × six Play tasks.
+**Recorded 20 of 72 conditions:** four policies × three materials × six Play tasks.
 
 ## Results
 
@@ -9,7 +9,7 @@ A completed crossing reaches the far side of the sand bed. A completed tilting t
 | Task | Reduced order | MPM flat finetune | MPM rough finetune | MPM scratch |
 |---|---:|---:|---:|---:|
 | [flat](flat/report.md) | 1/3 | 3/3 | 3/3 | 3/3 |
-| [ascending](ascending/report.md) | 0/2 recorded | 0/1 recorded | 0/1 recorded | 0/1 recorded |
+| [ascending](ascending/report.md) | 0/2 recorded | 1/2 recorded | 0/2 recorded | 1/2 recorded |
 | [descending](descending/report.md) | 0/0 recorded | 0/0 recorded | 0/0 recorded | 0/0 recorded |
 | [dune](dune/report.md) | 0/0 recorded | 0/0 recorded | 0/0 recorded | 0/0 recorded |
 | [standing tilt](standing_tilt/report.md) | 0/0 recorded | 0/0 recorded | 0/0 recorded | 0/0 recorded |
@@ -19,7 +19,7 @@ A completed crossing reaches the far side of the sand bed. A completed tilting t
 
 - **Reduced order:** flat/mild_sand: Stopped: outside_workspace at 5.08 s; flat/soft_sand: Stopped: bad_orientation at 3.44 s; ascending/basalt_like: Stopped: bad_orientation at 3.08 s; ascending/mild_sand: Stopped: base_too_low at 3.18 s
 - **MPM flat finetune:** ascending/basalt_like: Stopped: outside_workspace at 12.84 s
-- **MPM rough finetune:** ascending/basalt_like: time limit at 13.00 s
+- **MPM rough finetune:** ascending/basalt_like: time limit at 13.00 s; ascending/mild_sand: Stopped: outside_workspace at 7.00 s
 - **MPM scratch:** ascending/basalt_like: Stopped: outside_workspace at 10.04 s
 
 Per-task reports above contain every RMSE, step measurement, individual video, and 1×4 comparison.
@@ -47,6 +47,8 @@ Latest available checkpoint per requested run, frozen by SHA-256 in [checkpoints
 These reproduce the earlier benchmark presets. Stiff cohesive is the requested almost-solid proxy, not calibrated basalt or rigid collision. Mild sand has a higher elastic modulus but no cohesion; the names do not rank Young's modulus. Several parameters change together. [All material parameters](materials.json).
 
 ## Protocol and measurements
+
+Stationary beds are 6 × 2 m with a 0.3 m initial particle layer. Ascending/descending ramps have slope ±0.4 (±21.8 degrees); the dune has two ridges of height 0.3 m. The standing tray is 3 × 2 m and the walking tray is 4 × 4 m, both with a 0.3 m particle layer. MPM voxel size is 0.04 m, policy timestep 0.02 s, and physics timestep 0.005 s.
 
 - One deterministic episode per condition, seed 42, using the current registered Play scenes. No task implementation was changed for this benchmark. Each rollout saves its resolved configuration and log.
 - Flat, ascending, descending, and dune: forward command 1 m/s, lateral and yaw-rate commands zero; start on the approach platform. Stop at the first termination, 13 s, or base X 0.4 m before the far bed edge.
