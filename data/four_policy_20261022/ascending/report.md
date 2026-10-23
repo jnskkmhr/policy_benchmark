@@ -17,6 +17,7 @@ One episode per policy/material, seed 42. Early terminations remain included.
 | Soft sand | Reduced order | Stopped: bad_orientation | 2.820 | 0.000 | — | — | — |
 | Soft sand | MPM flat finetune | solver capacity error | 4.580 | 1.900 | 0.631 | 0.183 | 1.128 |
 | Soft sand | MPM rough finetune | solver capacity error | 4.600 | 1.960 | 0.490 | 0.092 | 0.564 |
+| Soft sand | MPM scratch | solver capacity error | 4.580 | 2.080 | 0.533 | 0.067 | 0.618 |
 
 ![Tracking](tracking.png)
 
@@ -35,6 +36,7 @@ One episode per policy/material, seed 42. Early terminations remain included.
 | Soft sand | Reduced order | 0 / 0 | — | — | — | — |
 | Soft sand | MPM flat finetune | 6 / 7 | 0.237 ± 0.118 | 0.073 ± 0.133 | -5.308 ± 7.879 | 12.682 ± 7.330 |
 | Soft sand | MPM rough finetune | 5 / 5 | 0.304 ± 0.041 | 0.151 ± 0.055 | -7.163 ± 5.082 | 6.172 ± 5.244 |
+| Soft sand | MPM scratch | 4 / 5 | 0.315 ± 0.054 | 0.162 ± 0.093 | -9.269 ± 5.645 | 3.354 ± 4.869 |
 
 ![Gait](gait.png)
 
