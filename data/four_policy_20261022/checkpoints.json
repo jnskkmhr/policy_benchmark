@@ -1,0 +1,30 @@
+{
+  "soft_contact": {
+    "run_id": "tyiby5k6",
+    "project": "g1_29dof_soft_flat_ppo",
+    "checkpoint": "model_19999.pt",
+    "checkpoint_sha256": "7b7fc952ae608ebbcdce049a88b29bafa13b9fd6b7a8208b0fe8259986dc1aa5",
+    "run_url": "https://forge.coreweave.com/wandb/jnskkmr/g1_29dof_soft_flat_ppo/runs/tyiby5k6"
+  },
+  "mpm_flat": {
+    "run_id": "evh180n4",
+    "project": "g1_29dof_mpm_mixed_terrain",
+    "checkpoint": "model_39998.pt",
+    "checkpoint_sha256": "b4822adbd0b2aa29788a4a35ed2b2003a0c31cd9ccbc7cdb0ef8f0c5f6bc2171",
+    "run_url": "https://forge.coreweave.com/wandb/jnskkmr/g1_29dof_mpm_mixed_terrain/runs/evh180n4"
+  },
+  "mpm_rough": {
+    "run_id": "5f1xyc21",
+    "project": "g1_29dof_mpm_mixed_terrain",
+    "checkpoint": "model_39998.pt",
+    "checkpoint_sha256": "2d858c14766b64d69c7e19aae4edc3b8403d49b344bd6278fc77ec6b7a5938c4",
+    "run_url": "https://forge.coreweave.com/wandb/jnskkmr/g1_29dof_mpm_mixed_terrain/runs/5f1xyc21"
+  },
+  "scratch": {
+    "run_id": "876gqr97",
+    "project": "g1_29dof_mpm_mixed_terrain",
+    "checkpoint": "model_19999.pt",
+    "checkpoint_sha256": "6b42e06d62ab9e8e24367aef451eafabc1e10305ffbdd234313f10d5acd5e5fa",
+    "run_url": "https://forge.coreweave.com/wandb/jnskkmr/g1_29dof_mpm_mixed_terrain/runs/876gqr97"
+  }
+}

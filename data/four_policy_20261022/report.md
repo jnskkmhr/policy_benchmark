@@ -1,0 +1,73 @@
+# Four-policy MPM benchmark — 22 October 2026
+
+**Recorded 13 of 72 conditions:** four policies × three materials × six Play tasks.
+
+## Results
+
+A completed crossing reaches the far side of the sand bed. A completed tilting trial lasts 30 seconds without a task termination. The table counts those completions out of three materials; solver errors are not policy failures.
+
+| Task | Reduced order | MPM flat finetune | MPM rough finetune | MPM scratch |
+|---|---:|---:|---:|---:|
+| [flat](flat/report.md) | 1/3 | 3/3 | 3/3 | 3/3 |
+| [ascending](ascending/report.md) | 0/1 recorded | 0/0 recorded | 0/0 recorded | 0/0 recorded |
+| [descending](descending/report.md) | 0/0 recorded | 0/0 recorded | 0/0 recorded | 0/0 recorded |
+| [dune](dune/report.md) | 0/0 recorded | 0/0 recorded | 0/0 recorded | 0/0 recorded |
+| [standing tilt](standing_tilt/report.md) | 0/0 recorded | 0/0 recorded | 0/0 recorded | 0/0 recorded |
+| [walking tilt](walking_tilt/report.md) | 0/0 recorded | 0/0 recorded | 0/0 recorded | 0/0 recorded |
+
+**Failures and stops:**
+
+- **Reduced order:** flat/mild_sand: Stopped: outside_workspace at 5.08 s; flat/soft_sand: Stopped: bad_orientation at 3.44 s; ascending/basalt_like: Stopped: bad_orientation at 3.08 s
+- **MPM flat finetune:** No recorded failures.
+- **MPM rough finetune:** No recorded failures.
+- **MPM scratch:** No recorded failures.
+
+Per-task reports above contain every RMSE, step measurement, individual video, and 1×4 comparison.
+[All measurements: CSV](summary.csv) · [JSON](summary.json)
+
+## Policies
+
+| Policy | Run | Checkpoint |
+|---|---|---|
+| Reduced order | [tyiby5k6](https://forge.coreweave.com/wandb/jnskkmr/g1_29dof_soft_flat_ppo/runs/tyiby5k6) | `model_19999.pt` |
+| MPM flat finetune | [evh180n4](https://forge.coreweave.com/wandb/jnskkmr/g1_29dof_mpm_mixed_terrain/runs/evh180n4) | `model_39998.pt` |
+| MPM rough finetune | [5f1xyc21](https://forge.coreweave.com/wandb/jnskkmr/g1_29dof_mpm_mixed_terrain/runs/5f1xyc21) | `model_39998.pt` |
+| MPM scratch | [876gqr97](https://forge.coreweave.com/wandb/jnskkmr/g1_29dof_mpm_mixed_terrain/runs/876gqr97) | `model_19999.pt` |
+
+Latest available checkpoint per requested run, frozen by SHA-256 in [checkpoints.json](checkpoints.json). All actors load strictly with 937 inputs and 29 actions. Actors use 10-frame term-wise history plus the command group. Critics are unused. Observation corruption is disabled.
+
+## Material presets
+
+| Material | Density (kg/m³) | Young's modulus (Pa) | Friction | Yield pressure (Pa) | Yield stress (Pa) | Tensile yield ratio |
+|---|---:|---:|---:|---:|---:|---:|
+| Stiff cohesive | 2700 | 4e+10 | 0.8391 | 1e+09 | 1e+08 | 1 |
+| Mild sand | 1600 | 1e+15 | 0.48 | 1e+15 | 0 | 0 |
+| Soft sand | 1000 | 1e+06 | 0.3 | 1e+15 | 0 | 0 |
+
+These reproduce the earlier benchmark presets. Stiff cohesive is the requested almost-solid proxy, not calibrated basalt or rigid collision. Mild sand has a higher elastic modulus but no cohesion; the names do not rank Young's modulus. Several parameters change together. [All material parameters](materials.json).
+
+## Protocol and measurements
+
+- One deterministic episode per condition, seed 42, using the current registered Play scenes. No task implementation was changed for this benchmark. Each rollout saves its resolved configuration and log.
+- Flat, ascending, descending, and dune: forward command 1 m/s, lateral and yaw-rate commands zero; start on the approach platform. Stop at the first termination, 13 s, or base X 0.4 m before the far bed edge.
+- Standing tilt: zero command for 30 s. Walking tilt: 4 s each of forward/backward ±0.25 m/s, left/right ±0.25 m/s, yaw ±0.3 rad/s, then zero command to 30 s. Tray motion is the current task's configured motion, identical between policies for the same task.
+- Tracking window: both ankle links inside the sand bed with 0.15 m edge margin, after 0.5 s. Linear velocity uses the gravity-aligned robot heading frame; yaw rate uses world Z. Traces show the whole episode; RMSE uses only the sand window.
+- Contact transitions must persist for 60 ms. Step duration is the interval between consecutive opposite-foot touchdowns. Step length is signed ankle-link displacement along X, in world coordinates for stationary beds and tray coordinates for tilting beds.
+- Clearance is peak height of the lowest collision-sole corner relative to the initial sand surface at that XY, or the initial surface in tray coordinates. It is not clearance above the moving particle surface. Swing lift subtracts sole height at liftoff. Only complete steps/swings inside the sand window count.
+- Videos are RTX, 960×540 per policy, 25 FPS. Tiled videos place all four policies in one row at matching episode times. Finished rollouts hold the final frame with a label.
+
+## Limits
+
+This is a single-seed comparison, not a statistical ranking. Gait error bars are event standard deviations within one rollout. Failed policies have shorter measurement windows, so low RMSE alone is not success. Zero eligible gait events are shown as missing, not zero. A workspace termination is reported as such, rather than automatically called a fall. Backward and lateral walking make signed X step length insufficient as a general stride-distance measure. No inference about real sand or hardware is made.
+
+## Reproduce
+
+Run from the repository root with the existing environment:
+
+```bash
+uv run --no-sync --with wandb python source/isaaclab_tasks/isaaclab_tasks/contrib/g1_29dof_mpm/benchmark_2/run_comparison.py --all
+uv run --no-sync python source/isaaclab_tasks/isaaclab_tasks/contrib/g1_29dof_mpm/benchmark_2/analyze_comparison.py --videos
+```
+
+The runner resumes by skipping completed conditions. To rerun a condition, use a fresh campaign directory. `--prepare` resolves the latest W&B checkpoint again; the supplied manifest is the frozen record for these results.
+[Dependency versions and source hashes](provenance.json) · [Tracked source diff](tracked_changes.patch).
