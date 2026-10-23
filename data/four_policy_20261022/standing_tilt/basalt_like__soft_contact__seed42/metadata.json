@@ -1,0 +1,111 @@
+{
+  "campaign": "four_policy_20261022",
+  "leaf_capacity_override": null,
+  "policy": "soft_contact",
+  "material": "basalt_like",
+  "seed": 42,
+  "task": "IsaacContrib-Balance-Sand-Tilting-G1-29dof-MPM-Play",
+  "task_kind": "tilting",
+  "terrain": "standing_tilt",
+  "rl_library": "rsl_rl",
+  "run_id": "tyiby5k6",
+  "project": "g1_29dof_soft_flat_ppo",
+  "checkpoint": "/home/jkamohara/isaac/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/g1_29dof_mpm/benchmark/data/checkpoints/tyiby5k6/model_19999.pt",
+  "training_config": "/home/jkamohara/isaac/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/g1_29dof_mpm/benchmark/data/four_policy_20261022/tyiby5k6_training_config.json",
+  "checkpoint_sha256": "7b7fc952ae608ebbcdce049a88b29bafa13b9fd6b7a8208b0fe8259986dc1aa5",
+  "run_url": "https://forge.coreweave.com/wandb/jnskkmr/g1_29dof_soft_flat_ppo/runs/tyiby5k6",
+  "outcome": "terminated",
+  "terminal_terms": [
+    "outside_workspace"
+  ],
+  "simulation_error": null,
+  "duration_s": 8.96,
+  "wall_time_s": 58.446538552991115,
+  "step_dt": 0.02,
+  "video_fps": 25,
+  "requested_duration_s": 30.0,
+  "walking_commands": null,
+  "foot_names": [
+    "left_ankle_roll_link",
+    "right_ankle_roll_link"
+  ],
+  "sand_bounds": [
+    [
+      -1.5,
+      1.5
+    ],
+    [
+      -1.0,
+      1.0
+    ]
+  ],
+  "material_parameters": {
+    "density": 2700.0,
+    "young_modulus": 40000000000.0,
+    "poisson_ratio": 0.3,
+    "viscosity": 0.0,
+    "friction": 0.8390996311772799,
+    "damping": 0.0,
+    "yield_pressure": 1000000000.0,
+    "tensile_yield_ratio": 1.0,
+    "yield_stress": 100000000.0,
+    "hardening": 0.0,
+    "dilatancy": 0.0,
+    "hardening_rate": 1.0,
+    "softening_rate": 1.0
+  },
+  "sand_spawn": {
+    "func": "isaaclab_newton.sim.spawners.mpm.mpm:spawn_mpm_particles",
+    "visible": true,
+    "semantic_tags": null,
+    "copy_from_source": true,
+    "spawn_path": "/World/envs/env_0/Sand",
+    "material": {
+      "density": 2700.0,
+      "young_modulus": 40000000000.0,
+      "poisson_ratio": 0.3,
+      "viscosity": 0.0,
+      "friction": 0.8390996311772799,
+      "damping": 0.0,
+      "yield_pressure": 1000000000.0,
+      "tensile_yield_ratio": 1.0,
+      "yield_stress": 100000000.0,
+      "hardening": 0.0,
+      "dilatancy": 0.0,
+      "hardening_rate": 1.0,
+      "softening_rate": 1.0
+    },
+    "visual_color": [
+      0.32,
+      0.24,
+      0.21
+    ],
+    "visual_material": null,
+    "visual_update_frequency": 1,
+    "lower": [
+      -1.5,
+      -1.0,
+      -0.3
+    ],
+    "upper": [
+      1.5,
+      1.0,
+      0.0
+    ],
+    "voxel_size": 0.04,
+    "particles_per_cell": 1.25,
+    "particle_placement": "cell_center",
+    "jitter": 0.05,
+    "mass": null,
+    "radius": null
+  },
+  "actor_input_dim": 937,
+  "actor_observation_terms": [
+    "base_ang_vel",
+    "projected_gravity",
+    "joint_pos",
+    "joint_vel",
+    "actions"
+  ],
+  "actor_weights_loaded_strictly": true
+}
