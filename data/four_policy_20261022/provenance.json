@@ -60,5 +60,15 @@
     "source/isaaclab_tasks/isaaclab_tasks/contrib/velocity/config/g1_29dof_rigid/mdp/commands/swing_command.py": "4bdfde8cdd8fd3750cd72ce042cfb3551d6a2d372d1c9404865e76dc07d00358",
     "source/isaaclab_tasks/isaaclab_tasks/contrib/velocity/config/g1_29dof_rigid/mdp/commands/commands_cfg.py": "5797b5001b4352c1ef9956dd11be3ee43bfef81cd3bb60fa0958142e8ccef16c"
   },
-  "gpu": "NVIDIA GeForce RTX 5090, 595.99.02"
+  "gpu": "NVIDIA GeForce RTX 5090, 595.99.02",
+  "dependency_commits": {
+    "newton": {
+      "vcs": "git",
+      "commit_id": "af06def4d33557eb2bfedfd6c7ed487cbb44ef6f",
+      "requested_revision": "jnskkmhr/fix-coupler-solver-param-sync"
+    }
+  },
+  "robot_asset_sha256": {
+    "/home/jkamohara/isaac/IsaacLab/source/isaaclab_assets/data/unitree/g1_29dof_rev_1_0_box_foot_improved_collision/g1_29dof_rev_1_0_box_foot_improved_collision.usda": "c0db4d62801cc8cf16512fc36acc5ee96b842cd51be6870f60a3638bb30bc96d"
+  }
 }
