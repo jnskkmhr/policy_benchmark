@@ -1,0 +1,14 @@
+{
+  "primary_conditions": 72,
+  "capacity_diagnostics": 3,
+  "individual_videos": 75,
+  "comparison_videos": 18,
+  "png_figures": 18,
+  "pdf_figures": 18,
+  "issues": [],
+  "script_lint": "Ruff and Ruff format passed",
+  "repository_hook_limit": "Full format command fails existing unrelated changelog-fragment checks",
+  "browser_check": "Headless Chrome rendered the live site and selected task/material links correctly",
+  "published_video_and_trace_hash_matches": 168,
+  "broken_report_links": []
+}

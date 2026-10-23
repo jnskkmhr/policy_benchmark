@@ -18,3 +18,7 @@ Checkpoint weights and W&B credentials are excluded.
 
 Each task's report includes individual and 1×4 videos, PNG/PDF figures, and measurement definitions.
 Early task terminations and solver failures remain visible. This is one episode per condition at seed 42.
+
+Completed: **72 primary conditions + 3 allocation diagnostics**, with **75 individual videos**, **18 comparison videos**, and **18 PNG/PDF figure pairs**.
+
+[Artifact validation](data/four_policy_20261022/validation.json) found no data or video issues.
