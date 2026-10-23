@@ -1,0 +1,47 @@
+{
+  "basalt_like": {
+    "density": 2700.0,
+    "young_modulus": 40000000000.0,
+    "poisson_ratio": 0.3,
+    "viscosity": 0.0,
+    "friction": 0.8390996311772799,
+    "damping": 0.0,
+    "yield_pressure": 1000000000.0,
+    "tensile_yield_ratio": 1.0,
+    "yield_stress": 100000000.0,
+    "hardening": 0.0,
+    "dilatancy": 0.0,
+    "hardening_rate": 1.0,
+    "softening_rate": 1.0
+  },
+  "mild_sand": {
+    "density": 1600.0,
+    "young_modulus": 1000000000000000.0,
+    "poisson_ratio": 0.3,
+    "viscosity": 0.0,
+    "friction": 0.48,
+    "damping": 0.0,
+    "yield_pressure": 1000000000000000.0,
+    "tensile_yield_ratio": 0.0,
+    "yield_stress": 0.0,
+    "hardening": 0.0,
+    "dilatancy": 0.0,
+    "hardening_rate": 1.0,
+    "softening_rate": 1.0
+  },
+  "soft_sand": {
+    "density": 1000.0,
+    "young_modulus": 1000000.0,
+    "poisson_ratio": 0.3,
+    "viscosity": 0.0,
+    "friction": 0.3,
+    "damping": 0.0,
+    "yield_pressure": 1000000000000000.0,
+    "tensile_yield_ratio": 0.0,
+    "yield_stress": 0.0,
+    "hardening": 0.0,
+    "dilatancy": 0.0,
+    "hardening_rate": 1.0,
+    "softening_rate": 1.0
+  }
+}
