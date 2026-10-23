@@ -2,7 +2,7 @@
 
 Replaces the previous camera-obstructed recordings. The reduced-order policy is now `no87uwhe`. All results below come from new rollouts; the previous campaign is retained separately.
 
-**Recorded 6 of 72 conditions:** four policies × three materials × six Play tasks.
+**Recorded 7 of 72 conditions:** four policies × three materials × six Play tasks.
 
 ## Results
 
@@ -11,7 +11,7 @@ A completed crossing reaches the far side of the sand bed. A completed tilting t
 | Task | Reduced order (no87uwhe) | MPM flat finetune | MPM rough finetune | MPM scratch |
 |---|---:|---:|---:|---:|
 | [flat](flat/report.md) | 0/0 recorded | 0/0 recorded | 0/0 recorded | 0/0 recorded |
-| [ascending](ascending/report.md) | 0/1 recorded | 0/1 recorded | 0/1 recorded | 0/0 recorded |
+| [ascending](ascending/report.md) | 0/1 recorded | 0/1 recorded | 0/1 recorded | 1/1 recorded |
 | [descending](descending/report.md) | 0/0 recorded | 0/0 recorded | 0/0 recorded | 0/0 recorded |
 | [dune](dune/report.md) | 0/0 recorded | 0/0 recorded | 0/0 recorded | 0/0 recorded |
 | [standing tilt](standing_tilt/report.md) | 0/1 recorded | 1/1 recorded | 1/1 recorded | 0/0 recorded |

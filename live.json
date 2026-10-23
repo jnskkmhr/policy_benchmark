@@ -1,6 +1,6 @@
 {
-  "updated_utc": "2026-10-23 05:56:12 UTC",
-  "completed": 6,
+  "updated_utc": "2026-10-23 05:57:49 UTC",
+  "completed": 7,
   "total": 72,
   "campaign": "four_policy_20261022_v2",
   "rows": [
@@ -83,6 +83,33 @@
       "clearance_cm_std": 8.795285512105833,
       "swing_lift_cm_mean": 17.64429973928552,
       "swing_lift_cm_std": 8.608722642486608,
+      "terrain": "ascending"
+    },
+    {
+      "policy": "scratch",
+      "material": "basalt_like",
+      "seed": 42,
+      "outcome": "crossed_sand_bed",
+      "duration_s": 12.38,
+      "terminal_terms": "",
+      "sand_time_s": 9.64,
+      "sand_progress_m": 5.60099983215332,
+      "step_count": 32,
+      "swing_count": 33,
+      "vx_rmse": 0.4582401216030121,
+      "vx_mean": 0.5583044290542603,
+      "vy_rmse": 0.0921151265501976,
+      "vy_mean": 0.014613170176744461,
+      "wz_rmse": 0.8811696767807007,
+      "wz_mean": -0.02404829114675522,
+      "step_duration_s_mean": 0.28374999999999995,
+      "step_duration_s_std": 0.05666513478321577,
+      "step_length_m_mean": 0.16602820763364434,
+      "step_length_m_std": 0.03664455123049045,
+      "clearance_cm_mean": 12.04915146032967,
+      "clearance_cm_std": 3.3238869128881587,
+      "swing_lift_cm_mean": 10.541615332617905,
+      "swing_lift_cm_std": 3.9774717163073867,
       "terrain": "ascending"
     },
     {
@@ -170,5 +197,7 @@
       "terrain": "standing_tilt"
     }
   ],
-  "comparisons": []
+  "comparisons": [
+    "videos/four_policy_20261022_v2/ascending/comparison_basalt_like.mp4"
+  ]
 }
