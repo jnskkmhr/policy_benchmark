@@ -1,0 +1,157 @@
+{
+  "campaign": "four_policy_20261022_v2",
+  "leaf_capacity_override": null,
+  "policy": "soft_contact",
+  "material": "mild_sand",
+  "seed": 42,
+  "task": "IsaacContrib-Velocity-Sand-Flat-G1-29dof-MPM-Play",
+  "task_kind": "flat",
+  "terrain": "flat",
+  "rl_library": "rsl_rl",
+  "run_id": "no87uwhe",
+  "project": "g1_29dof_soft_flat_ppo",
+  "checkpoint": "/home/jkamohara/isaac/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/g1_29dof_mpm/benchmark/data/checkpoints/no87uwhe/model_19999.pt",
+  "training_config": "/home/jkamohara/isaac/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/g1_29dof_mpm/benchmark/data/four_policy_20261022_v2/no87uwhe_training_config.json",
+  "checkpoint_sha256": "7f80ea4469b7cb15553ae91641c93d5e07484577af9342c3fd8333ca2e759777",
+  "run_url": "https://forge.coreweave.com/wandb/jnskkmr/g1_29dof_soft_flat_ppo/runs/no87uwhe",
+  "outcome": "crossed_sand_bed",
+  "terminal_terms": [],
+  "simulation_error": null,
+  "duration_s": 5.96,
+  "wall_time_s": 38.36011495895218,
+  "step_dt": 0.02,
+  "video_fps": 25,
+  "visualizer_cfg": {
+    "class_type": "isaaclab_visualizers.newton.newton_visualizer:NewtonRTXVisualizer",
+    "cloning_contexts": [
+      "isaaclab_newton.cloner:NewtonReplicateContext"
+    ],
+    "view": null,
+    "window": {
+      "size": [
+        960,
+        540
+      ],
+      "fps": 30.0
+    },
+    "headless": true,
+    "cameras": null,
+    "eye": [
+      -6.0,
+      1.5,
+      4.5
+    ],
+    "lookat": [
+      -1.133547,
+      -1.052032,
+      0.3
+    ],
+    "focal_length": 10.0,
+    "background_color": null,
+    "origin_type": "world",
+    "origin_env_index": 0,
+    "origin_track_path": "robot",
+    "streaming_view": false,
+    "streaming_sensor_prim_path": null,
+    "streaming_envs": 32,
+    "streaming_gt_types": [
+      "rgb"
+    ],
+    "streaming_depth_min": 0.1,
+    "streaming_depth_max": 10.0,
+    "max_visible_envs": null,
+    "visible_env_indices": null,
+    "randomly_sample_visible_envs": true,
+    "enable_markers": true,
+    "enable_live_plots": true,
+    "live_plots_update_interval": 5,
+    "visualizer_type": "newton_rtx",
+    "enable_picking": true,
+    "render_settings": {}
+  },
+  "requested_duration_s": 13.0,
+  "walking_commands": null,
+  "foot_names": [
+    "left_ankle_roll_link",
+    "right_ankle_roll_link"
+  ],
+  "sand_bounds": [
+    [
+      -3.0,
+      3.0
+    ],
+    [
+      -1.0,
+      1.0
+    ]
+  ],
+  "material_parameters": {
+    "density": 1600.0,
+    "young_modulus": 1000000000000000.0,
+    "poisson_ratio": 0.3,
+    "viscosity": 0.0,
+    "friction": 0.48,
+    "damping": 0.0,
+    "yield_pressure": 1000000000000000.0,
+    "tensile_yield_ratio": 0.0,
+    "yield_stress": 0.0,
+    "hardening": 0.0,
+    "dilatancy": 0.0,
+    "hardening_rate": 1.0,
+    "softening_rate": 1.0
+  },
+  "sand_spawn": {
+    "func": "isaaclab_newton.sim.spawners.mpm.mpm:spawn_mpm_particles",
+    "visible": true,
+    "semantic_tags": null,
+    "copy_from_source": true,
+    "spawn_path": "/World/envs/env_0/Sand",
+    "material": {
+      "density": 1600.0,
+      "young_modulus": 1000000000000000.0,
+      "poisson_ratio": 0.3,
+      "viscosity": 0.0,
+      "friction": 0.48,
+      "damping": 0.0,
+      "yield_pressure": 1000000000000000.0,
+      "tensile_yield_ratio": 0.0,
+      "yield_stress": 0.0,
+      "hardening": 0.0,
+      "dilatancy": 0.0,
+      "hardening_rate": 1.0,
+      "softening_rate": 1.0
+    },
+    "visual_color": [
+      0.32,
+      0.24,
+      0.21
+    ],
+    "visual_material": null,
+    "visual_update_frequency": 1,
+    "lower": [
+      -3.0,
+      -1.0,
+      -0.3
+    ],
+    "upper": [
+      3.0,
+      1.0,
+      0.0
+    ],
+    "voxel_size": 0.04,
+    "particles_per_cell": 1.25,
+    "particle_placement": "cell_center",
+    "jitter": 0.05,
+    "mass": null,
+    "radius": null
+  },
+  "actor_input_dim": 937,
+  "actor_observation_terms": [
+    "base_ang_vel",
+    "projected_gravity",
+    "joint_pos",
+    "joint_vel",
+    "actions"
+  ],
+  "actor_weights_loaded_strictly": true
+}
