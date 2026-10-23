@@ -158,8 +158,22 @@
     {
       "terrain": "descending",
       "material": "soft_sand",
+      "policy": "scratch",
+      "ankle_segments_tested": 428,
+      "wall_occluded_segments": 0
+    },
+    {
+      "terrain": "descending",
+      "material": "soft_sand",
       "policy": "soft_contact",
       "ankle_segments_tested": 460,
+      "wall_occluded_segments": 0
+    },
+    {
+      "terrain": "dune",
+      "material": "basalt_like",
+      "policy": "soft_contact",
+      "ankle_segments_tested": 666,
       "wall_occluded_segments": 0
     }
   ]
