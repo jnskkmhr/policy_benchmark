@@ -16,11 +16,11 @@
   "run_url": "https://forge.coreweave.com/wandb/jnskkmr/g1_29dof_mpm_mixed_terrain/runs/5f1xyc21",
   "outcome": "terminated",
   "terminal_terms": [
-    "extreme_action"
+    "bad_orientation"
   ],
   "simulation_error": null,
-  "duration_s": 7.2,
-  "wall_time_s": 184.89207433804404,
+  "duration_s": 3.34,
+  "wall_time_s": 41.68132534692995,
   "step_dt": 0.02,
   "video_fps": 25,
   "visualizer_cfg": {
@@ -40,7 +40,7 @@
     "cameras": null,
     "eye": [
       -2.4,
-      0.8,
+      0.0,
       2.0
     ],
     "lookat": [
@@ -221,5 +221,6 @@
     "joint_vel",
     "actions"
   ],
-  "actor_weights_loaded_strictly": true
+  "actor_weights_loaded_strictly": true,
+  "camera_revision": "downhill_centerline"
 }

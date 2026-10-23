@@ -17,8 +17,8 @@
   "outcome": "crossed_sand_bed",
   "terminal_terms": [],
   "simulation_error": null,
-  "duration_s": 5.96,
-  "wall_time_s": 31.513689315062948,
+  "duration_s": 5.9,
+  "wall_time_s": 48.73272881901357,
   "step_dt": 0.02,
   "video_fps": 25,
   "visualizer_cfg": {
@@ -38,7 +38,7 @@
     "cameras": null,
     "eye": [
       -2.4,
-      0.8,
+      0.0,
       2.0
     ],
     "lookat": [
@@ -219,5 +219,6 @@
     "joint_vel",
     "actions"
   ],
-  "actor_weights_loaded_strictly": true
+  "actor_weights_loaded_strictly": true,
+  "camera_revision": "downhill_centerline"
 }

@@ -19,8 +19,8 @@
     "bad_orientation"
   ],
   "simulation_error": null,
-  "duration_s": 4.98,
-  "wall_time_s": 39.848737448919564,
+  "duration_s": 5.08,
+  "wall_time_s": 59.66924130509142,
   "step_dt": 0.02,
   "video_fps": 25,
   "visualizer_cfg": {
@@ -221,5 +221,6 @@
     "joint_vel",
     "actions"
   ],
-  "actor_weights_loaded_strictly": true
+  "actor_weights_loaded_strictly": true,
+  "camera_revision": "downhill_centerline"
 }

@@ -89,42 +89,84 @@
       "terrain": "descending",
       "material": "basalt_like",
       "policy": "mpm_flat",
-      "ankle_segments_tested": 494,
+      "ankle_segments_tested": 412,
       "wall_occluded_segments": 0
     },
     {
       "terrain": "descending",
       "material": "basalt_like",
       "policy": "mpm_rough",
-      "ankle_segments_tested": 326,
+      "ankle_segments_tested": 684,
       "wall_occluded_segments": 0
     },
     {
       "terrain": "descending",
       "material": "basalt_like",
       "policy": "scratch",
-      "ankle_segments_tested": 350,
+      "ankle_segments_tested": 352,
       "wall_occluded_segments": 0
     },
     {
       "terrain": "descending",
       "material": "basalt_like",
       "policy": "soft_contact",
-      "ankle_segments_tested": 636,
-      "wall_occluded_segments": 100
+      "ankle_segments_tested": 554,
+      "wall_occluded_segments": 0
+    },
+    {
+      "terrain": "descending",
+      "material": "mild_sand",
+      "policy": "mpm_flat",
+      "ankle_segments_tested": 590,
+      "wall_occluded_segments": 0
+    },
+    {
+      "terrain": "descending",
+      "material": "mild_sand",
+      "policy": "mpm_rough",
+      "ankle_segments_tested": 728,
+      "wall_occluded_segments": 0
     },
     {
       "terrain": "descending",
       "material": "mild_sand",
       "policy": "scratch",
-      "ankle_segments_tested": 558,
+      "ankle_segments_tested": 484,
       "wall_occluded_segments": 0
     },
     {
       "terrain": "descending",
       "material": "mild_sand",
       "policy": "soft_contact",
-      "ankle_segments_tested": 490,
+      "ankle_segments_tested": 512,
+      "wall_occluded_segments": 0
+    },
+    {
+      "terrain": "descending",
+      "material": "soft_sand",
+      "policy": "mpm_flat",
+      "ankle_segments_tested": 472,
+      "wall_occluded_segments": 0
+    },
+    {
+      "terrain": "descending",
+      "material": "soft_sand",
+      "policy": "mpm_rough",
+      "ankle_segments_tested": 334,
+      "wall_occluded_segments": 0
+    },
+    {
+      "terrain": "descending",
+      "material": "soft_sand",
+      "policy": "scratch",
+      "ankle_segments_tested": 508,
+      "wall_occluded_segments": 0
+    },
+    {
+      "terrain": "descending",
+      "material": "soft_sand",
+      "policy": "soft_contact",
+      "ankle_segments_tested": 402,
       "wall_occluded_segments": 0
     },
     {
@@ -137,8 +179,78 @@
     {
       "terrain": "dune",
       "material": "basalt_like",
+      "policy": "mpm_rough",
+      "ankle_segments_tested": 796,
+      "wall_occluded_segments": 0
+    },
+    {
+      "terrain": "dune",
+      "material": "basalt_like",
+      "policy": "scratch",
+      "ankle_segments_tested": 1010,
+      "wall_occluded_segments": 0
+    },
+    {
+      "terrain": "dune",
+      "material": "basalt_like",
       "policy": "soft_contact",
       "ankle_segments_tested": 748,
+      "wall_occluded_segments": 0
+    },
+    {
+      "terrain": "dune",
+      "material": "mild_sand",
+      "policy": "mpm_flat",
+      "ankle_segments_tested": 836,
+      "wall_occluded_segments": 0
+    },
+    {
+      "terrain": "dune",
+      "material": "mild_sand",
+      "policy": "mpm_rough",
+      "ankle_segments_tested": 802,
+      "wall_occluded_segments": 0
+    },
+    {
+      "terrain": "dune",
+      "material": "mild_sand",
+      "policy": "scratch",
+      "ankle_segments_tested": 796,
+      "wall_occluded_segments": 0
+    },
+    {
+      "terrain": "dune",
+      "material": "mild_sand",
+      "policy": "soft_contact",
+      "ankle_segments_tested": 538,
+      "wall_occluded_segments": 0
+    },
+    {
+      "terrain": "dune",
+      "material": "soft_sand",
+      "policy": "mpm_flat",
+      "ankle_segments_tested": 826,
+      "wall_occluded_segments": 0
+    },
+    {
+      "terrain": "dune",
+      "material": "soft_sand",
+      "policy": "mpm_rough",
+      "ankle_segments_tested": 850,
+      "wall_occluded_segments": 0
+    },
+    {
+      "terrain": "dune",
+      "material": "soft_sand",
+      "policy": "scratch",
+      "ankle_segments_tested": 918,
+      "wall_occluded_segments": 0
+    },
+    {
+      "terrain": "dune",
+      "material": "soft_sand",
+      "policy": "soft_contact",
+      "ankle_segments_tested": 318,
       "wall_occluded_segments": 0
     }
   ]

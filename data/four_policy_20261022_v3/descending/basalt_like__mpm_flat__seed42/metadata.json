@@ -19,8 +19,8 @@
     "bad_orientation"
   ],
   "simulation_error": null,
-  "duration_s": 4.94,
-  "wall_time_s": 37.328790297033265,
+  "duration_s": 4.12,
+  "wall_time_s": 38.10806386801414,
   "step_dt": 0.02,
   "video_fps": 25,
   "visualizer_cfg": {
@@ -40,7 +40,7 @@
     "cameras": null,
     "eye": [
       -2.4,
-      0.8,
+      0.0,
       2.0
     ],
     "lookat": [
@@ -221,5 +221,6 @@
     "joint_vel",
     "actions"
   ],
-  "actor_weights_loaded_strictly": true
+  "actor_weights_loaded_strictly": true,
+  "camera_revision": "downhill_centerline"
 }

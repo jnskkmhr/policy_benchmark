@@ -76,7 +76,7 @@
   "revision_reason": "Closer built-in robot asset tracking requested; keep no87uwhe and 2x2 comparisons.",
   "benchmark_scripts_sha256": {
     "source/isaaclab_tasks/isaaclab_tasks/contrib/g1_29dof_mpm/benchmark_2/run_comparison.py": "8e118fb053935442f827914231a8d4650d6517d621d47ba8c598772a4bc6fca8",
-    "source/isaaclab_tasks/isaaclab_tasks/contrib/g1_29dof_mpm/benchmark_2/analyze_comparison.py": "eef1d953a61723f11c9c1f51213f4455b62d9f94bbe78ba4dc6e16860283552a"
+    "source/isaaclab_tasks/isaaclab_tasks/contrib/g1_29dof_mpm/benchmark_2/analyze_comparison.py": "a5d55f91c4de435e631b118734d61dc7a19d10dd675c524be02b64bdc5e078b3"
   },
   "camera_reference": "benchmark/videos/rough/comparison_mild_sand.mp4",
   "camera_adjustment": {

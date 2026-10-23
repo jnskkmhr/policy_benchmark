@@ -22,6 +22,158 @@
       "policy": "scratch"
     }
   ],
-  "finding": "Robot remains centered in all inspected frames. The retaining walls do not obscure the robot or its feet. Camera follows translation without rotating with robot yaw.",
-  "scope": "Preview frame inspection, not exhaustive per-pixel occlusion verification of every frame."
+  "finding": "All robots remain in frame at the inspected timestamps. Retaining walls do not obstruct the robot in the final camera settings. Downhill uses the checked centerline revision.",
+  "scope": "Preview frame inspection, not exhaustive per-pixel occlusion verification of every frame.",
+  "reviewed_complete_sets": [
+    {
+      "terrain": "ascending",
+      "material": "basalt_like",
+      "policies": [
+        "soft_contact",
+        "mpm_flat",
+        "mpm_rough",
+        "scratch"
+      ]
+    },
+    {
+      "terrain": "ascending",
+      "material": "mild_sand",
+      "policies": [
+        "soft_contact",
+        "mpm_flat",
+        "mpm_rough",
+        "scratch"
+      ]
+    },
+    {
+      "terrain": "ascending",
+      "material": "soft_sand",
+      "policies": [
+        "soft_contact",
+        "mpm_flat",
+        "mpm_rough",
+        "scratch"
+      ]
+    },
+    {
+      "terrain": "descending",
+      "material": "basalt_like",
+      "policies": [
+        "soft_contact",
+        "mpm_flat",
+        "mpm_rough",
+        "scratch"
+      ]
+    },
+    {
+      "terrain": "descending",
+      "material": "mild_sand",
+      "policies": [
+        "soft_contact",
+        "mpm_flat",
+        "mpm_rough",
+        "scratch"
+      ]
+    },
+    {
+      "terrain": "descending",
+      "material": "soft_sand",
+      "policies": [
+        "soft_contact",
+        "mpm_flat",
+        "mpm_rough",
+        "scratch"
+      ]
+    },
+    {
+      "terrain": "flat",
+      "material": "basalt_like",
+      "policies": [
+        "soft_contact",
+        "mpm_flat",
+        "mpm_rough",
+        "scratch"
+      ]
+    },
+    {
+      "terrain": "flat",
+      "material": "mild_sand",
+      "policies": [
+        "soft_contact",
+        "mpm_flat",
+        "mpm_rough",
+        "scratch"
+      ]
+    },
+    {
+      "terrain": "flat",
+      "material": "soft_sand",
+      "policies": [
+        "soft_contact",
+        "mpm_flat",
+        "mpm_rough",
+        "scratch"
+      ]
+    },
+    {
+      "terrain": "dune",
+      "material": "basalt_like",
+      "policies": [
+        "soft_contact",
+        "mpm_flat",
+        "mpm_rough",
+        "scratch"
+      ]
+    },
+    {
+      "terrain": "dune",
+      "material": "mild_sand",
+      "policies": [
+        "soft_contact",
+        "mpm_flat",
+        "mpm_rough",
+        "scratch"
+      ]
+    },
+    {
+      "terrain": "dune",
+      "material": "soft_sand",
+      "policies": [
+        "soft_contact",
+        "mpm_flat",
+        "mpm_rough",
+        "scratch"
+      ]
+    },
+    {
+      "terrain": "standing_tilt",
+      "material": "basalt_like",
+      "policies": [
+        "soft_contact",
+        "mpm_flat",
+        "mpm_rough",
+        "scratch"
+      ]
+    },
+    {
+      "terrain": "standing_tilt",
+      "material": "mild_sand",
+      "policies": [
+        "soft_contact",
+        "mpm_flat",
+        "mpm_rough",
+        "scratch"
+      ]
+    },
+    {
+      "terrain": "standing_tilt",
+      "material": "soft_sand",
+      "policies": [
+        "soft_contact",
+        "mpm_flat",
+        "mpm_rough",
+        "scratch"
+      ]
+    }
+  ]
 }

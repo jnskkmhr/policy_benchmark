@@ -14,13 +14,11 @@
   "training_config": "/home/jkamohara/isaac/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/g1_29dof_mpm/benchmark/data/four_policy_20261022_v3/5f1xyc21_training_config.json",
   "checkpoint_sha256": "2d858c14766b64d69c7e19aae4edc3b8403d49b344bd6278fc77ec6b7a5938c4",
   "run_url": "https://forge.coreweave.com/wandb/jnskkmr/g1_29dof_mpm_mixed_terrain/runs/5f1xyc21",
-  "outcome": "terminated",
-  "terminal_terms": [
-    "outside_workspace"
-  ],
+  "outcome": "crossed_sand_bed",
+  "terminal_terms": [],
   "simulation_error": null,
-  "duration_s": 6.140000000000001,
-  "wall_time_s": 39.12274745502509,
+  "duration_s": 7.28,
+  "wall_time_s": 66.92341773491353,
   "step_dt": 0.02,
   "video_fps": 25,
   "visualizer_cfg": {
@@ -40,7 +38,7 @@
     "cameras": null,
     "eye": [
       -2.4,
-      0.8,
+      0.0,
       2.0
     ],
     "lookat": [
@@ -221,5 +219,6 @@
     "joint_vel",
     "actions"
   ],
-  "actor_weights_loaded_strictly": true
+  "actor_weights_loaded_strictly": true,
+  "camera_revision": "downhill_centerline"
 }
