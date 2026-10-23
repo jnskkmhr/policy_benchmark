@@ -73,7 +73,7 @@
   },
   "campaign": "four_policy_20261022_v3",
   "supersedes": "four_policy_20261022_v2",
-  "revision_reason": "Correct obstructed cameras, use no87uwhe, and publish 2x2 videos",
+  "revision_reason": "Closer built-in robot asset tracking requested; keep no87uwhe and 2x2 comparisons.",
   "benchmark_scripts_sha256": {
     "source/isaaclab_tasks/isaaclab_tasks/contrib/g1_29dof_mpm/benchmark_2/run_comparison.py": "0379a1ffa335838ac7367854e891b0b12b6b6f19ebc843df38a2195cedbb2733",
     "source/isaaclab_tasks/isaaclab_tasks/contrib/g1_29dof_mpm/benchmark_2/analyze_comparison.py": "82978c5ea9c32fbbb5ad2914e50c22c39302b8a5084b605f9f69d11196fb49f4"
@@ -101,6 +101,5 @@
       1.25
     ]
   },
-  "downhill_fill_light": "Distant light, intensity 1500, quaternion xyzw (-0.06645228, -0.37686961, -0.16042999, 0.90984373); ambient color (0.5, 0.5, 0.5). Rendering only.",
-  "reason": "User requested closer built-in robot asset tracking instead of a distant fixed camera."
+  "downhill_fill_light": "Distant light, intensity 1500, quaternion xyzw (-0.06645228, -0.37686961, -0.16042999, 0.90984373); ambient color (0.5, 0.5, 0.5). Rendering only."
 }
