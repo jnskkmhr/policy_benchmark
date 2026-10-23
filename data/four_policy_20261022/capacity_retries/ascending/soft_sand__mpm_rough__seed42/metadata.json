@@ -1,0 +1,164 @@
+{
+  "campaign": "four_policy_20261022",
+  "leaf_capacity_override": 32768,
+  "policy": "mpm_rough",
+  "material": "soft_sand",
+  "seed": 42,
+  "task": "IsaacContrib-Velocity-Sand-Ascending-G1-29dof-MPM-Play",
+  "task_kind": "ascending",
+  "terrain": "ascending",
+  "rl_library": "rsl_rl",
+  "run_id": "5f1xyc21",
+  "project": "g1_29dof_mpm_mixed_terrain",
+  "checkpoint": "/home/jkamohara/isaac/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/g1_29dof_mpm/benchmark/data/checkpoints/5f1xyc21/model_39998.pt",
+  "training_config": "/home/jkamohara/isaac/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/g1_29dof_mpm/benchmark/data/four_policy_20261022/5f1xyc21_training_config.json",
+  "checkpoint_sha256": "2d858c14766b64d69c7e19aae4edc3b8403d49b344bd6278fc77ec6b7a5938c4",
+  "run_url": "https://forge.coreweave.com/wandb/jnskkmr/g1_29dof_mpm_mixed_terrain/runs/5f1xyc21",
+  "outcome": "terminated",
+  "terminal_terms": [
+    "outside_workspace"
+  ],
+  "simulation_error": null,
+  "duration_s": 9.46,
+  "wall_time_s": 65.46963038202375,
+  "step_dt": 0.02,
+  "video_fps": 25,
+  "requested_duration_s": 13.0,
+  "walking_commands": null,
+  "foot_names": [
+    "left_ankle_roll_link",
+    "right_ankle_roll_link"
+  ],
+  "sand_bounds": [
+    [
+      -3.0,
+      3.0
+    ],
+    [
+      -1.0,
+      1.0
+    ]
+  ],
+  "material_parameters": {
+    "density": 1000.0,
+    "young_modulus": 1000000.0,
+    "poisson_ratio": 0.3,
+    "viscosity": 0.0,
+    "friction": 0.3,
+    "damping": 0.0,
+    "yield_pressure": 1000000000000000.0,
+    "tensile_yield_ratio": 0.0,
+    "yield_stress": 0.0,
+    "hardening": 0.0,
+    "dilatancy": 0.0,
+    "hardening_rate": 1.0,
+    "softening_rate": 1.0
+  },
+  "sand_spawn": {
+    "func": "isaaclab_tasks.contrib.g1_29dof_mpm.util.terrain:spawn_terrain_mpm",
+    "visible": true,
+    "semantic_tags": null,
+    "copy_from_source": true,
+    "spawn_path": "/World/envs/env_0/Sand",
+    "material": {
+      "density": 1000.0,
+      "young_modulus": 1000000.0,
+      "poisson_ratio": 0.3,
+      "viscosity": 0.0,
+      "friction": 0.3,
+      "damping": 0.0,
+      "yield_pressure": 1000000000000000.0,
+      "tensile_yield_ratio": 0.0,
+      "yield_stress": 0.0,
+      "hardening": 0.0,
+      "dilatancy": 0.0,
+      "hardening_rate": 1.0,
+      "softening_rate": 1.0
+    },
+    "visual_color": [
+      0.32,
+      0.24,
+      0.21
+    ],
+    "visual_material": null,
+    "visual_update_frequency": 1,
+    "lower": [
+      -3.0,
+      -1.0,
+      -0.3
+    ],
+    "upper": [
+      3.0,
+      1.0,
+      0.0
+    ],
+    "voxel_size": 0.04,
+    "particles_per_cell": 1.25,
+    "particle_placement": "cell_center",
+    "jitter": 0.016,
+    "mass": null,
+    "radius": null,
+    "terrain_generator": {
+      "class_type": "isaaclab.terrains.terrain_generator:TerrainGenerator",
+      "seed": 42,
+      "curriculum": false,
+      "size": [
+        6.0,
+        2.0
+      ],
+      "border_width": 0.0,
+      "border_height": 1.0,
+      "num_rows": 1,
+      "num_cols": 1,
+      "color_scheme": "none",
+      "horizontal_scale": 0.1,
+      "vertical_scale": 0.005,
+      "slope_threshold": 0.75,
+      "sub_terrains": {
+        "slope": {
+          "function": "isaaclab_tasks.contrib.g1_29dof_mpm.util.terrain:x_sloped_terrain",
+          "proportion": 1.0,
+          "size": [
+            10.0,
+            10.0
+          ],
+          "convert_to_heightfield": false,
+          "flat_patch_sampling": null,
+          "slope_range": [
+            0.4,
+            0.4
+          ]
+        }
+      },
+      "difficulty_range": [
+        0.0,
+        1.0
+      ],
+      "use_cache": false,
+      "cache_dir": "/tmp/isaaclab/terrains"
+    },
+    "support_contact_margin": 0.0,
+    "wall_thickness": 0.1,
+    "wall_height": 0.1,
+    "entrance_height": -0.05,
+    "support_material": {
+      "func": "isaaclab.sim.spawners.materials.physics_materials:spawn_rigid_body_material",
+      "static_friction": 0.9,
+      "dynamic_friction": 0.8,
+      "restitution": 0.0,
+      "density": null,
+      "_usd_applied_schema": null,
+      "_usd_field_exceptions": {},
+      "_usd_namespace": "physics"
+    }
+  },
+  "actor_input_dim": 937,
+  "actor_observation_terms": [
+    "base_ang_vel",
+    "projected_gravity",
+    "joint_pos",
+    "joint_vel",
+    "actions"
+  ],
+  "actor_weights_loaded_strictly": true
+}

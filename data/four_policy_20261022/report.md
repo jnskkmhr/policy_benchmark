@@ -1,6 +1,6 @@
 # Four-policy MPM benchmark — 22 October 2026
 
-**Recorded 32 of 72 conditions:** four policies × three materials × six Play tasks.
+**Recorded 35 of 72 conditions:** four policies × three materials × six Play tasks.
 
 ## Results
 
@@ -10,14 +10,14 @@ A completed crossing reaches the far side of the sand bed. A completed tilting t
 |---|---:|---:|---:|---:|
 | [flat](flat/report.md) | 1/3 | 3/3 | 3/3 | 3/3 |
 | [ascending](ascending/report.md) | 0/3 | 1/3 | 0/3 | 1/3 |
-| [descending](descending/report.md) | 0/2 recorded | 0/2 recorded | 1/2 recorded | 0/1 recorded |
+| [descending](descending/report.md) | 0/3 | 0/2 recorded | 1/2 recorded | 1/2 recorded |
 | [dune](dune/report.md) | 0/0 recorded | 0/0 recorded | 0/0 recorded | 0/0 recorded |
 | [standing tilt](standing_tilt/report.md) | 0/0 recorded | 0/0 recorded | 0/0 recorded | 0/0 recorded |
-| [walking tilt](walking_tilt/report.md) | 1/1 recorded | 0/0 recorded | 0/0 recorded | 0/0 recorded |
+| [walking tilt](walking_tilt/report.md) | 1/1 recorded | 1/1 recorded | 0/0 recorded | 0/0 recorded |
 
 **Failures and stops:**
 
-- **Reduced order:** flat/mild_sand: Stopped: outside_workspace at 5.08 s; flat/soft_sand: Stopped: bad_orientation at 3.44 s; ascending/basalt_like: Stopped: bad_orientation at 3.08 s; ascending/mild_sand: Stopped: base_too_low at 3.18 s; ascending/soft_sand: Stopped: bad_orientation at 2.82 s; descending/basalt_like: Stopped: bad_orientation at 4.00 s; descending/mild_sand: Stopped: bad_orientation at 3.94 s
+- **Reduced order:** flat/mild_sand: Stopped: outside_workspace at 5.08 s; flat/soft_sand: Stopped: bad_orientation at 3.44 s; ascending/basalt_like: Stopped: bad_orientation at 3.08 s; ascending/mild_sand: Stopped: base_too_low at 3.18 s; ascending/soft_sand: Stopped: bad_orientation at 2.82 s; descending/basalt_like: Stopped: bad_orientation at 4.00 s; descending/mild_sand: Stopped: bad_orientation at 3.94 s; descending/soft_sand: Stopped: bad_orientation at 4.54 s
 - **MPM flat finetune:** ascending/basalt_like: Stopped: outside_workspace at 12.84 s; ascending/soft_sand: solver capacity error at 4.58 s; descending/basalt_like: Stopped: bad_orientation at 4.18 s; descending/mild_sand: Stopped: bad_orientation at 5.22 s
 - **MPM rough finetune:** ascending/basalt_like: time limit at 13.00 s; ascending/mild_sand: Stopped: outside_workspace at 7.00 s; ascending/soft_sand: solver capacity error at 4.60 s; descending/basalt_like: Stopped: extreme_action at 4.52 s
 - **MPM scratch:** ascending/basalt_like: Stopped: outside_workspace at 10.04 s; ascending/soft_sand: solver capacity error at 4.58 s; descending/basalt_like: Stopped: bad_orientation at 3.58 s
@@ -50,7 +50,7 @@ These reproduce the earlier benchmark presets. Stiff cohesive is the requested a
 
 Stationary beds are 6 × 2 m with a 0.3 m initial particle layer. Ascending/descending ramps have slope ±0.4 (±21.8 degrees); the dune has two ridges of height 0.3 m. The standing tray is 3 × 2 m and the walking tray is 4 × 4 m, both with a 0.3 m particle layer. MPM voxel size is 0.04 m, policy timestep 0.02 s, and physics timestep 0.005 s.
 
-- One deterministic episode per condition, seed 42, using the current registered Play scenes. No task implementation was changed for this benchmark. Each rollout saves its resolved configuration and log.
+- One episode per condition with deterministic actor outputs, seed 42, using current Play scenes. No task implementation was changed for this benchmark. Each rollout saves its resolved configuration and log.
 - Flat, ascending, descending, and dune: forward command 1 m/s, lateral and yaw-rate commands zero; start on the approach platform. Stop at the first termination, 13 s, or base X 0.4 m before the far bed edge.
 - Standing tilt: zero command for 30 s. Walking tilt: 4 s each of forward/backward ±0.25 m/s, left/right ±0.25 m/s, yaw ±0.3 rad/s, then zero command to 30 s. Tray motion is the current task's configured motion, identical between policies for the same task.
 - Tracking window: both ankle links inside the sand bed with 0.15 m edge margin, after 0.5 s. Linear velocity uses the gravity-aligned robot heading frame; yaw rate uses world Z. Traces show the whole episode; RMSE uses only the sand window.
@@ -60,7 +60,7 @@ Stationary beds are 6 × 2 m with a 0.3 m initial particle layer. Ascending/desc
 
 ## Limits
 
-This is a single-seed comparison, not a statistical ranking. Gait error bars are event standard deviations within one rollout. Failed policies have shorter measurement windows, so low RMSE alone is not success. Zero eligible gait events are shown as missing, not zero. A workspace termination is reported as such, rather than automatically called a fall. Backward and lateral walking make signed X step length insufficient as a general stride-distance measure. No inference about real sand or hardware is made.
+This is a single-seed comparison, not a statistical ranking. Newton does not guarantee bitwise deterministic replay. Gait error bars are event standard deviations within one rollout. Failed policies have shorter measurement windows, so low RMSE alone is not success. Zero eligible gait events are shown as missing, not zero. A workspace termination is reported as such, rather than automatically called a fall. Backward and lateral walking make signed X step length insufficient as a general stride-distance measure. No inference about real sand or hardware is made.
 
 ## Reproduce
 
@@ -81,3 +81,4 @@ These additional trials increase leaf-node allocation from 8,192 to 32,768; phys
 | Task | Policy | Material | Retry outcome | Duration (s) | Data / video |
 |---|---|---|---|---:|---|
 | ascending | mpm_flat | soft_sand | terminated: outside_workspace | 9.34 | [Metadata](capacity_retries/ascending/soft_sand__mpm_flat__seed42/metadata.json) · [Video](../../videos/four_policy_20261022/capacity_retries/ascending/soft_sand__mpm_flat__seed42/rollout.mp4) |
+| ascending | mpm_rough | soft_sand | terminated: outside_workspace | 9.46 | [Metadata](capacity_retries/ascending/soft_sand__mpm_rough__seed42/metadata.json) · [Video](../../videos/four_policy_20261022/capacity_retries/ascending/soft_sand__mpm_rough__seed42/rollout.mp4) |
