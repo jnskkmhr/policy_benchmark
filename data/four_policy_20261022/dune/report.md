@@ -17,6 +17,7 @@ One episode per policy/material, seed 42. Early terminations remain included.
 | Soft sand | Reduced order | Stopped: bad_orientation | 3.120 | 0.440 | 0.407 | 0.147 | 1.743 |
 | Soft sand | MPM flat finetune | crossed sand bed | 8.280 | 5.660 | 0.197 | 0.074 | 0.797 |
 | Soft sand | MPM rough finetune | crossed sand bed | 8.520 | 6.080 | 0.218 | 0.070 | 0.900 |
+| Soft sand | MPM scratch | crossed sand bed | 8.920 | 6.600 | 0.264 | 0.064 | 0.637 |
 
 ![Tracking](tracking.png)
 
@@ -35,6 +36,7 @@ One episode per policy/material, seed 42. Early terminations remain included.
 | Soft sand | Reduced order | 0 / 0 | — | — | — | — |
 | Soft sand | MPM flat finetune | 16 / 18 | 0.249 ± 0.092 | 0.210 ± 0.126 | -2.387 ± 5.238 | 4.252 ± 3.379 |
 | Soft sand | MPM rough finetune | 9 / 9 | 0.584 ± 0.476 | 0.503 ± 0.482 | -6.937 ± 3.838 | 2.596 ± 2.044 |
+| Soft sand | MPM scratch | 7 / 9 | 0.491 ± 0.254 | 0.400 ± 0.227 | -7.081 ± 2.958 | 3.752 ± 3.615 |
 
 ![Gait](gait.png)
 
