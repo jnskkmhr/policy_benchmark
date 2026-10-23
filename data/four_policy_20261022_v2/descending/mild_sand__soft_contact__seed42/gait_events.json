@@ -1,0 +1,29 @@
+{
+  "steps": [
+    {
+      "foot": 0,
+      "start_s": 2.42,
+      "end_s": 2.46,
+      "step_duration_s": 0.040000000000000036,
+      "step_length_m": 0.05047345161437988
+    }
+  ],
+  "swings": [
+    {
+      "foot": 0,
+      "start_s": 3.12,
+      "end_s": 3.3000000000000003,
+      "swing_duration_s": 0.18000000000000016,
+      "clearance_cm": -0.29441475868223765,
+      "swing_lift_cm": 0.0
+    },
+    {
+      "foot": 0,
+      "start_s": 4.3,
+      "end_s": 4.42,
+      "swing_duration_s": 0.1200000000000001,
+      "clearance_cm": 3.488750457763712,
+      "swing_lift_cm": 0.0
+    }
+  ]
+}

@@ -75,9 +75,10 @@
   "supersedes": "four_policy_20261022",
   "revision_reason": "Correct obstructed cameras, use no87uwhe, and publish 2x2 videos",
   "benchmark_scripts_sha256": {
-    "source/isaaclab_tasks/isaaclab_tasks/contrib/g1_29dof_mpm/benchmark_2/run_comparison.py": "2440284c4a23c3ecdd49d2b838f804bb204786e968fc8f692c7b24846c50c36e",
-    "source/isaaclab_tasks/isaaclab_tasks/contrib/g1_29dof_mpm/benchmark_2/analyze_comparison.py": "f861081ec97ba696bc15c9b1a35e50bffe86b08c029a79bcb449d92a3ee5e3a4"
+    "source/isaaclab_tasks/isaaclab_tasks/contrib/g1_29dof_mpm/benchmark_2/run_comparison.py": "45145fceb7324718ebc6cd2545467f08cd40b0a939ae5cd68dc786ecfb30d7fd",
+    "source/isaaclab_tasks/isaaclab_tasks/contrib/g1_29dof_mpm/benchmark_2/analyze_comparison.py": "7d554c53f0250fd1ff49e7888aecaa0da9e3dbe94ef0a12053aac0047edb657c"
   },
   "camera_reference": "benchmark/videos/rough/comparison_mild_sand.mp4",
-  "camera_adjustment": "Stationary camera at (-6, 1.5, 4.5), looking at (-1.133547, -1.052032, 0.3), focal length 10 mm; pulled back and up from the reference to include the approach."
+  "camera_adjustment": "Stationary camera at (-6, 1.5, 4.5), looking at (-1.133547, -1.052032, 0.3), focal length 10 mm; pulled back and up from the reference to include the approach.",
+  "downhill_fill_light": "Distant light, intensity 1500, quaternion xyzw (-0.06645228, -0.37686961, -0.16042999, 0.90984373); ambient color (0.5, 0.5, 0.5). Rendering only."
 }

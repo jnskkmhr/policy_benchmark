@@ -8,6 +8,7 @@ One episode per policy/material, seed 42. Early terminations remain included.
 |---|---|---|---:|---:|---:|---:|---:|
 | Stiff cohesive | Reduced order (no87uwhe) | time limit | 30.000 | 29.500 | 0.194 | 0.178 | 0.388 |
 | Stiff cohesive | MPM flat finetune | time limit | 30.000 | 29.500 | 0.138 | 0.098 | 0.405 |
+| Stiff cohesive | MPM rough finetune | time limit | 30.000 | 29.500 | 0.104 | 0.085 | 0.366 |
 
 ![Tracking](tracking.png)
 
@@ -17,6 +18,7 @@ One episode per policy/material, seed 42. Early terminations remain included.
 |---|---|---:|---:|---:|---:|---:|
 | Stiff cohesive | Reduced order (no87uwhe) | 101 / 105 | 0.248 ± 0.071 | 0.006 ± 0.168 | 8.225 ± 3.071 | 7.968 ± 3.363 |
 | Stiff cohesive | MPM flat finetune | 82 / 85 | 0.311 ± 0.220 | -0.004 ± 0.099 | 8.756 ± 4.650 | 7.450 ± 4.632 |
+| Stiff cohesive | MPM rough finetune | 67 / 70 | 0.344 ± 0.073 | -0.012 ± 0.096 | 10.717 ± 3.937 | 9.226 ± 3.882 |
 
 ![Gait](gait.png)
 
