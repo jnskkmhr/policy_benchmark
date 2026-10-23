@@ -1,6 +1,6 @@
 # Four-policy MPM benchmark — 22 October 2026
 
-**Recorded 54 of 72 conditions:** four policies × three materials × six Play tasks.
+**Recorded 55 of 72 conditions:** four policies × three materials × six Play tasks.
 
 ## Results
 
@@ -11,7 +11,7 @@ A completed crossing reaches the far side of the sand bed. A completed tilting t
 | [flat](flat/report.md) | 1/3 | 3/3 | 3/3 | 3/3 |
 | [ascending](ascending/report.md) | 0/3 | 1/3 | 0/3 | 1/3 |
 | [descending](descending/report.md) | 0/3 | 0/3 | 1/3 | 1/3 |
-| [dune](dune/report.md) | 1/3 | 3/3 | 1/2 recorded | 1/2 recorded |
+| [dune](dune/report.md) | 1/3 | 3/3 | 2/3 | 1/2 recorded |
 | [standing tilt](standing_tilt/report.md) | 0/1 recorded | 0/0 recorded | 0/0 recorded | 0/0 recorded |
 | [walking tilt](walking_tilt/report.md) | 1/2 recorded | 2/2 recorded | 2/2 recorded | 1/1 recorded |
 
@@ -48,7 +48,7 @@ These reproduce the earlier benchmark presets. Stiff cohesive is the requested a
 
 ## Protocol and measurements
 
-Stationary beds are 6 × 2 m with a 0.3 m initial particle layer. Ascending/descending ramps have slope ±0.4 (±21.8 degrees); the dune has two ridges of height 0.3 m. The standing tray is 3 × 2 m and the walking tray is 4 × 4 m, both with a 0.3 m particle layer. MPM voxel size is 0.04 m, policy timestep 0.02 s, and physics timestep 0.005 s.
+Stationary beds are 6 × 2 m with a 0.3 m initial particle layer. Ascending/descending ramps have slope ±0.4 (±21.8 degrees); the dune has two ridges of height 0.3 m. The standing tray is 3 × 2 m and the walking tray is 4 × 4 m, both with a 0.3 m particle layer. Standing-tray roll/pitch amplitudes are ±15 degrees; walking-tray amplitudes are ±10 degrees. Both use 12 s roll and 17 s pitch periods, 2 s settling, and a 3 s ramp. MPM voxel size is 0.04 m, policy timestep 0.02 s, and physics timestep 0.005 s.
 
 - One episode per condition with deterministic actor outputs, seed 42, using current Play scenes. No task implementation was changed for this benchmark. Each rollout saves its resolved configuration and log.
 - Flat, ascending, descending, and dune: forward command 1 m/s, lateral and yaw-rate commands zero; start on the approach platform. Stop at the first termination, 13 s, or base X 0.4 m before the far bed edge.
