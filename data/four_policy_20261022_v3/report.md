@@ -2,7 +2,7 @@
 
 Replaces the previous camera-obstructed recordings. The reduced-order policy is now `no87uwhe`. All results below come from new rollouts; the previous campaign is retained separately.
 
-**Recorded 51 of 72 conditions:** four policies × three materials × six Play tasks.
+**Recorded 54 of 72 conditions:** four policies × three materials × six Play tasks.
 
 ## Results
 
@@ -12,8 +12,8 @@ A completed crossing reaches the far side of the sand bed. A completed tilting t
 |---|---:|---:|---:|---:|
 | [flat](flat/report.md) | 3/3 | 3/3 | 3/3 | 3/3 |
 | [ascending](ascending/report.md) | 0/3 | 0/3 | 1/3 | 1/3 |
-| [descending](descending/report.md) | 2/3 | 1/3 | 0/2 recorded | 0/2 recorded |
-| [dune](dune/report.md) | 2/2 recorded | 2/2 recorded | 1/1 recorded | 1/1 recorded |
+| [descending](descending/report.md) | 2/3 | 1/3 | 0/3 | 0/2 recorded |
+| [dune](dune/report.md) | 2/2 recorded | 2/2 recorded | 2/2 recorded | 2/2 recorded |
 | [standing tilt](standing_tilt/report.md) | 0/3 | 1/3 | 2/2 recorded | 2/2 recorded |
 | [walking tilt](walking_tilt/report.md) | 0/0 recorded | 0/0 recorded | 0/0 recorded | 1/1 recorded |
 
@@ -21,7 +21,7 @@ A completed crossing reaches the far side of the sand bed. A completed tilting t
 
 - **Reduced order (no87uwhe):** ascending/basalt_like: Stopped: bad_orientation at 3.52 s; ascending/mild_sand: Stopped: bad_orientation at 3.64 s; ascending/soft_sand: Stopped: bad_orientation at 3.32 s; descending/mild_sand: Stopped: outside_workspace at 4.90 s; standing_tilt/basalt_like: Stopped: bad_orientation at 5.14 s; standing_tilt/mild_sand: Stopped: outside_workspace at 2.24 s; standing_tilt/soft_sand: Stopped: outside_workspace at 2.82 s
 - **MPM flat finetune:** ascending/basalt_like: time limit at 13.00 s; ascending/mild_sand: Stopped: base_too_low at 4.28 s; ascending/soft_sand: solver capacity error at 4.58 s; descending/basalt_like: Stopped: bad_orientation at 4.94 s; descending/soft_sand: Stopped: extreme_action at 5.16 s; standing_tilt/basalt_like: Stopped: outside_workspace at 7.74 s; standing_tilt/soft_sand: Stopped: outside_workspace at 6.64 s
-- **MPM rough finetune:** ascending/basalt_like: Stopped: outside_workspace at 10.34 s; ascending/soft_sand: solver capacity error at 4.60 s; descending/basalt_like: Stopped: outside_workspace at 3.26 s; descending/mild_sand: Stopped: outside_workspace at 6.14 s
+- **MPM rough finetune:** ascending/basalt_like: Stopped: outside_workspace at 10.34 s; ascending/soft_sand: solver capacity error at 4.60 s; descending/basalt_like: Stopped: outside_workspace at 3.26 s; descending/mild_sand: Stopped: outside_workspace at 6.14 s; descending/soft_sand: Stopped: extreme_action at 7.20 s
 - **MPM scratch:** ascending/basalt_like: time limit at 13.00 s; ascending/soft_sand: solver capacity error at 4.56 s; descending/basalt_like: Stopped: bad_orientation at 3.50 s; descending/mild_sand: Stopped: outside_workspace at 5.58 s
 
 Per-task reports above contain every RMSE, step measurement, individual video, and 2×2 comparison.
@@ -58,7 +58,7 @@ Stationary beds are 6 × 2 m with a 0.3 m initial particle layer. Ascending/desc
 - Tracking window: both ankle links inside the sand bed with 0.15 m edge margin, after 0.5 s. Linear velocity uses the gravity-aligned robot heading frame; yaw rate uses world Z. Traces show the whole episode; RMSE uses only the sand window.
 - Contact transitions must persist for 60 ms. Step duration is the interval between consecutive opposite-foot touchdowns. Step length is signed ankle-link displacement along X, in world coordinates for stationary beds and tray coordinates for tilting beds.
 - Clearance is peak height of the lowest collision-sole corner relative to the initial sand surface at that XY, or the initial surface in tray coordinates. It is not clearance above the moving particle surface. Swing lift subtracts sole height at liftoff. Only complete steps/swings inside the sand window count.
-- Videos are RTX, 960×540 per policy, 25 FPS. Tiled videos place the policies in a 2×2 grid at matching episode times. Finished rollouts hold the final frame with a label. The built-in asset camera tracks the robot root, with lookat offset (0, 0, -0.25) m. Ramps and dunes use eye offset (-2.4, 0.8, 2.0) m to clear the retaining walls; flat and tilting beds use the closer offset (-2.0, 1.4, 1.25) m. All views use focal length 12.000874 mm and disable streaming view. Downhill recordings add an entrance-side fill light to keep the robot visible in the wall shadows. This is a rendering-only change, identical for all policies and materials in that task.
+- Videos are RTX, 960×540 per policy, 25 FPS. Tiled videos place the policies in a 2×2 grid at matching episode times. Finished rollouts hold the final frame with a label. The built-in asset camera tracks the robot root, with lookat offset (0, 0, -0.25) m. Uphill and dune views use eye offset (-2.4, 0.8, 2.0) m; downhill uses (-2.4, 0, 2.0) m to avoid side-wall occlusion; flat and tilting beds use the closer offset (-2.0, 1.4, 1.25) m. All views use focal length 12.000874 mm and disable streaming view. Downhill recordings add an entrance-side fill light to keep the robot visible in the wall shadows. This is a rendering-only change, identical for all policies and materials in that task.
 
 ## Limits
 
