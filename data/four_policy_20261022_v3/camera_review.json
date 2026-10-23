@@ -1,0 +1,27 @@
+{
+  "method": "Visual inspection of start, quarter, midpoint, three-quarter and final frames in actual RTX video output.",
+  "reviewed_previews": [
+    {
+      "terrain": "ascending",
+      "material": "basalt_like",
+      "policy": "mpm_flat"
+    },
+    {
+      "terrain": "descending",
+      "material": "mild_sand",
+      "policy": "scratch"
+    },
+    {
+      "terrain": "flat",
+      "material": "mild_sand",
+      "policy": "mpm_rough"
+    },
+    {
+      "terrain": "walking_tilt",
+      "material": "mild_sand",
+      "policy": "scratch"
+    }
+  ],
+  "finding": "Robot remains centered in all inspected frames. The retaining walls do not obscure the robot or its feet. Camera follows translation without rotating with robot yaw.",
+  "scope": "Preview frame inspection, not exhaustive per-pixel occlusion verification of every frame."
+}

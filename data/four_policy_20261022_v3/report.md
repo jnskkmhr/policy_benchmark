@@ -2,7 +2,7 @@
 
 Replaces the previous camera-obstructed recordings. The reduced-order policy is now `no87uwhe`. All results below come from new rollouts; the previous campaign is retained separately.
 
-**Recorded 4 of 72 conditions:** four policies × three materials × six Play tasks.
+**Recorded 11 of 72 conditions:** four policies × three materials × six Play tasks.
 
 ## Results
 
@@ -10,19 +10,19 @@ A completed crossing reaches the far side of the sand bed. A completed tilting t
 
 | Task | Reduced order (no87uwhe) | MPM flat finetune | MPM rough finetune | MPM scratch |
 |---|---:|---:|---:|---:|
-| [flat](flat/report.md) | 0/0 recorded | 0/0 recorded | 1/1 recorded | 0/0 recorded |
-| [ascending](ascending/report.md) | 0/1 recorded | 0/1 recorded | 0/0 recorded | 0/0 recorded |
+| [flat](flat/report.md) | 1/1 recorded | 1/1 recorded | 1/1 recorded | 0/0 recorded |
+| [ascending](ascending/report.md) | 0/1 recorded | 0/1 recorded | 0/1 recorded | 0/1 recorded |
 | [descending](descending/report.md) | 0/0 recorded | 0/0 recorded | 0/0 recorded | 0/1 recorded |
 | [dune](dune/report.md) | 0/0 recorded | 0/0 recorded | 0/0 recorded | 0/0 recorded |
-| [standing tilt](standing_tilt/report.md) | 0/0 recorded | 0/0 recorded | 0/0 recorded | 0/0 recorded |
-| [walking tilt](walking_tilt/report.md) | 0/0 recorded | 0/0 recorded | 0/0 recorded | 0/0 recorded |
+| [standing tilt](standing_tilt/report.md) | 0/1 recorded | 0/1 recorded | 0/0 recorded | 0/0 recorded |
+| [walking tilt](walking_tilt/report.md) | 0/0 recorded | 0/0 recorded | 0/0 recorded | 1/1 recorded |
 
 **Failures and stops:**
 
-- **Reduced order (no87uwhe):** ascending/basalt_like: Stopped: bad_orientation at 3.52 s
-- **MPM flat finetune:** ascending/basalt_like: time limit at 13.00 s
-- **MPM rough finetune:** No recorded failures.
-- **MPM scratch:** descending/mild_sand: Stopped: outside_workspace at 5.58 s
+- **Reduced order (no87uwhe):** ascending/basalt_like: Stopped: bad_orientation at 3.52 s; standing_tilt/basalt_like: Stopped: bad_orientation at 5.14 s
+- **MPM flat finetune:** ascending/basalt_like: time limit at 13.00 s; standing_tilt/basalt_like: Stopped: outside_workspace at 7.74 s
+- **MPM rough finetune:** ascending/basalt_like: Stopped: outside_workspace at 10.34 s
+- **MPM scratch:** ascending/basalt_like: time limit at 13.00 s; descending/mild_sand: Stopped: outside_workspace at 5.58 s
 
 Per-task reports above contain every RMSE, step measurement, individual video, and 2×2 comparison.
 [All measurements: CSV](summary.csv) · [JSON](summary.json)
