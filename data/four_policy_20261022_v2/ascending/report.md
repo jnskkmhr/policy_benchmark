@@ -13,6 +13,8 @@ One episode per policy/material, seed 42. Early terminations remain included.
 | Mild sand | Reduced order (no87uwhe) | Stopped: bad_orientation | 3.460 | 0.860 | 0.821 | 0.284 | 4.240 |
 | Mild sand | MPM flat finetune | Stopped: outside_workspace | 5.320 | 2.680 | 0.221 | 0.245 | 1.925 |
 | Mild sand | MPM rough finetune | crossed sand bed | 9.300 | 6.820 | 0.244 | 0.102 | 0.947 |
+| Mild sand | MPM scratch | crossed sand bed | 10.280 | 7.860 | 0.332 | 0.064 | 0.666 |
+| Soft sand | Reduced order (no87uwhe) | Stopped: bad_orientation | 3.120 | 0.520 | 0.681 | 0.294 | 3.832 |
 
 ![Tracking](tracking.png)
 
@@ -27,6 +29,8 @@ One episode per policy/material, seed 42. Early terminations remain included.
 | Mild sand | Reduced order (no87uwhe) | 0 / 0 | — | — | — | — |
 | Mild sand | MPM flat finetune | 11 / 13 | 0.173 ± 0.018 | 0.161 ± 0.059 | 10.689 ± 4.912 | 16.826 ± 12.721 |
 | Mild sand | MPM rough finetune | 28 / 28 | 0.237 ± 0.017 | 0.185 ± 0.031 | -0.921 ± 2.411 | 7.766 ± 6.482 |
+| Mild sand | MPM scratch | 33 / 33 | 0.228 ± 0.016 | 0.154 ± 0.028 | -1.952 ± 3.932 | 7.345 ± 5.671 |
+| Soft sand | Reduced order (no87uwhe) | 0 / 1 | — | — | 0.149 ± 0.000 | 0.000 ± 0.000 |
 
 ![Gait](gait.png)
 

@@ -1,0 +1,68 @@
+{
+  "method": "Camera-to-ankle segment intersection with retaining-wall boxes reconstructed from the saved task config. Does not test particle, robot self-occlusion, or viewport clipping.",
+  "results": [
+    {
+      "terrain": "ascending",
+      "material": "basalt_like",
+      "policy": "mpm_flat",
+      "ankle_segments_tested": 1300,
+      "wall_occluded_segments": 0
+    },
+    {
+      "terrain": "ascending",
+      "material": "basalt_like",
+      "policy": "mpm_rough",
+      "ankle_segments_tested": 834,
+      "wall_occluded_segments": 0
+    },
+    {
+      "terrain": "ascending",
+      "material": "basalt_like",
+      "policy": "scratch",
+      "ankle_segments_tested": 1238,
+      "wall_occluded_segments": 0
+    },
+    {
+      "terrain": "ascending",
+      "material": "basalt_like",
+      "policy": "soft_contact",
+      "ankle_segments_tested": 420,
+      "wall_occluded_segments": 0
+    },
+    {
+      "terrain": "ascending",
+      "material": "mild_sand",
+      "policy": "mpm_flat",
+      "ankle_segments_tested": 532,
+      "wall_occluded_segments": 0
+    },
+    {
+      "terrain": "ascending",
+      "material": "mild_sand",
+      "policy": "mpm_rough",
+      "ankle_segments_tested": 930,
+      "wall_occluded_segments": 0
+    },
+    {
+      "terrain": "ascending",
+      "material": "mild_sand",
+      "policy": "scratch",
+      "ankle_segments_tested": 1028,
+      "wall_occluded_segments": 0
+    },
+    {
+      "terrain": "ascending",
+      "material": "mild_sand",
+      "policy": "soft_contact",
+      "ankle_segments_tested": 346,
+      "wall_occluded_segments": 0
+    },
+    {
+      "terrain": "ascending",
+      "material": "soft_sand",
+      "policy": "soft_contact",
+      "ankle_segments_tested": 312,
+      "wall_occluded_segments": 0
+    }
+  ]
+}
