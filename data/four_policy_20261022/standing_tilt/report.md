@@ -16,6 +16,7 @@ One episode per policy/material, seed 42. Early terminations remain included.
 | Mild sand | MPM scratch | time limit | 30.000 | 29.500 | 0.097 | 0.058 | 0.266 |
 | Soft sand | Reduced order | Stopped: outside_workspace | 4.460 | 3.960 | 0.488 | 0.107 | 0.365 |
 | Soft sand | MPM flat finetune | Stopped: outside_workspace | 7.120 | 6.200 | 0.205 | 0.201 | 0.442 |
+| Soft sand | MPM rough finetune | Stopped: outside_workspace | 19.840 | 19.340 | 0.158 | 0.125 | 0.278 |
 
 ![Tracking](tracking.png)
 
@@ -33,6 +34,7 @@ One episode per policy/material, seed 42. Early terminations remain included.
 | Mild sand | MPM scratch | 67 / 68 | 0.429 ± 0.081 | 0.007 ± 0.103 | -4.362 ± 4.245 | 12.124 ± 4.429 |
 | Soft sand | Reduced order | 0 / 0 | — | — | — | — |
 | Soft sand | MPM flat finetune | 0 / 0 | — | — | — | — |
+| Soft sand | MPM rough finetune | 13 / 21 | 0.334 ± 0.084 | -0.053 ± 0.057 | -16.457 ± 4.423 | 4.802 ± 3.637 |
 
 ![Gait](gait.png)
 
