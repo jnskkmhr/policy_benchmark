@@ -1,6 +1,6 @@
 # Four-policy MPM benchmark — 22 October 2026
 
-**Recorded 35 of 72 conditions:** four policies × three materials × six Play tasks.
+**Recorded 37 of 72 conditions:** four policies × three materials × six Play tasks.
 
 ## Results
 
@@ -10,7 +10,7 @@ A completed crossing reaches the far side of the sand bed. A completed tilting t
 |---|---:|---:|---:|---:|
 | [flat](flat/report.md) | 1/3 | 3/3 | 3/3 | 3/3 |
 | [ascending](ascending/report.md) | 0/3 | 1/3 | 0/3 | 1/3 |
-| [descending](descending/report.md) | 0/3 | 0/2 recorded | 1/2 recorded | 1/2 recorded |
+| [descending](descending/report.md) | 0/3 | 0/3 | 1/3 | 1/2 recorded |
 | [dune](dune/report.md) | 0/0 recorded | 0/0 recorded | 0/0 recorded | 0/0 recorded |
 | [standing tilt](standing_tilt/report.md) | 0/0 recorded | 0/0 recorded | 0/0 recorded | 0/0 recorded |
 | [walking tilt](walking_tilt/report.md) | 1/1 recorded | 1/1 recorded | 0/0 recorded | 0/0 recorded |
@@ -18,8 +18,8 @@ A completed crossing reaches the far side of the sand bed. A completed tilting t
 **Failures and stops:**
 
 - **Reduced order:** flat/mild_sand: Stopped: outside_workspace at 5.08 s; flat/soft_sand: Stopped: bad_orientation at 3.44 s; ascending/basalt_like: Stopped: bad_orientation at 3.08 s; ascending/mild_sand: Stopped: base_too_low at 3.18 s; ascending/soft_sand: Stopped: bad_orientation at 2.82 s; descending/basalt_like: Stopped: bad_orientation at 4.00 s; descending/mild_sand: Stopped: bad_orientation at 3.94 s; descending/soft_sand: Stopped: bad_orientation at 4.54 s
-- **MPM flat finetune:** ascending/basalt_like: Stopped: outside_workspace at 12.84 s; ascending/soft_sand: solver capacity error at 4.58 s; descending/basalt_like: Stopped: bad_orientation at 4.18 s; descending/mild_sand: Stopped: bad_orientation at 5.22 s
-- **MPM rough finetune:** ascending/basalt_like: time limit at 13.00 s; ascending/mild_sand: Stopped: outside_workspace at 7.00 s; ascending/soft_sand: solver capacity error at 4.60 s; descending/basalt_like: Stopped: extreme_action at 4.52 s
+- **MPM flat finetune:** ascending/basalt_like: Stopped: outside_workspace at 12.84 s; ascending/soft_sand: solver capacity error at 4.58 s; descending/basalt_like: Stopped: bad_orientation at 4.18 s; descending/mild_sand: Stopped: bad_orientation at 5.22 s; descending/soft_sand: Stopped: bad_orientation at 4.90 s
+- **MPM rough finetune:** ascending/basalt_like: time limit at 13.00 s; ascending/mild_sand: Stopped: outside_workspace at 7.00 s; ascending/soft_sand: solver capacity error at 4.60 s; descending/basalt_like: Stopped: extreme_action at 4.52 s; descending/soft_sand: Stopped: bad_orientation at 3.30 s
 - **MPM scratch:** ascending/basalt_like: Stopped: outside_workspace at 10.04 s; ascending/soft_sand: solver capacity error at 4.58 s; descending/basalt_like: Stopped: bad_orientation at 3.58 s
 
 Per-task reports above contain every RMSE, step measurement, individual video, and 1×4 comparison.
@@ -82,3 +82,4 @@ These additional trials increase leaf-node allocation from 8,192 to 32,768; phys
 |---|---|---|---|---:|---|
 | ascending | mpm_flat | soft_sand | terminated: outside_workspace | 9.34 | [Metadata](capacity_retries/ascending/soft_sand__mpm_flat__seed42/metadata.json) · [Video](../../videos/four_policy_20261022/capacity_retries/ascending/soft_sand__mpm_flat__seed42/rollout.mp4) |
 | ascending | mpm_rough | soft_sand | terminated: outside_workspace | 9.46 | [Metadata](capacity_retries/ascending/soft_sand__mpm_rough__seed42/metadata.json) · [Video](../../videos/four_policy_20261022/capacity_retries/ascending/soft_sand__mpm_rough__seed42/rollout.mp4) |
+| ascending | scratch | soft_sand | terminated: outside_workspace | 12.70 | [Metadata](capacity_retries/ascending/soft_sand__scratch__seed42/metadata.json) · [Video](../../videos/four_policy_20261022/capacity_retries/ascending/soft_sand__scratch__seed42/rollout.mp4) |
