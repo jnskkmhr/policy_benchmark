@@ -1,6 +1,6 @@
 # Four-policy MPM benchmark — 22 October 2026
 
-**Recorded 29 of 72 conditions:** four policies × three materials × six Play tasks.
+**Recorded 32 of 72 conditions:** four policies × three materials × six Play tasks.
 
 ## Results
 
@@ -10,15 +10,15 @@ A completed crossing reaches the far side of the sand bed. A completed tilting t
 |---|---:|---:|---:|---:|
 | [flat](flat/report.md) | 1/3 | 3/3 | 3/3 | 3/3 |
 | [ascending](ascending/report.md) | 0/3 | 1/3 | 0/3 | 1/3 |
-| [descending](descending/report.md) | 0/2 recorded | 0/1 recorded | 0/1 recorded | 0/1 recorded |
+| [descending](descending/report.md) | 0/2 recorded | 0/2 recorded | 1/2 recorded | 0/1 recorded |
 | [dune](dune/report.md) | 0/0 recorded | 0/0 recorded | 0/0 recorded | 0/0 recorded |
 | [standing tilt](standing_tilt/report.md) | 0/0 recorded | 0/0 recorded | 0/0 recorded | 0/0 recorded |
-| [walking tilt](walking_tilt/report.md) | 0/0 recorded | 0/0 recorded | 0/0 recorded | 0/0 recorded |
+| [walking tilt](walking_tilt/report.md) | 1/1 recorded | 0/0 recorded | 0/0 recorded | 0/0 recorded |
 
 **Failures and stops:**
 
 - **Reduced order:** flat/mild_sand: Stopped: outside_workspace at 5.08 s; flat/soft_sand: Stopped: bad_orientation at 3.44 s; ascending/basalt_like: Stopped: bad_orientation at 3.08 s; ascending/mild_sand: Stopped: base_too_low at 3.18 s; ascending/soft_sand: Stopped: bad_orientation at 2.82 s; descending/basalt_like: Stopped: bad_orientation at 4.00 s; descending/mild_sand: Stopped: bad_orientation at 3.94 s
-- **MPM flat finetune:** ascending/basalt_like: Stopped: outside_workspace at 12.84 s; ascending/soft_sand: solver capacity error at 4.58 s; descending/basalt_like: Stopped: bad_orientation at 4.18 s
+- **MPM flat finetune:** ascending/basalt_like: Stopped: outside_workspace at 12.84 s; ascending/soft_sand: solver capacity error at 4.58 s; descending/basalt_like: Stopped: bad_orientation at 4.18 s; descending/mild_sand: Stopped: bad_orientation at 5.22 s
 - **MPM rough finetune:** ascending/basalt_like: time limit at 13.00 s; ascending/mild_sand: Stopped: outside_workspace at 7.00 s; ascending/soft_sand: solver capacity error at 4.60 s; descending/basalt_like: Stopped: extreme_action at 4.52 s
 - **MPM scratch:** ascending/basalt_like: Stopped: outside_workspace at 10.04 s; ascending/soft_sand: solver capacity error at 4.58 s; descending/basalt_like: Stopped: bad_orientation at 3.58 s
 
