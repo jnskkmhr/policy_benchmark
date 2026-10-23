@@ -9,8 +9,24 @@
   "script_lint": "Ruff and Ruff format passed",
   "repository_hook_limit": "Full format command fails existing unrelated changelog-fragment checks",
   "browser_check": "Headless Chrome: 72/72 conditions, final campaign, versioned comparison video URL; composite video confirmed 2x2 by frame inspection and 1920x1120 dimensions.",
-  "exported_artifact_hashes_checked": 441,
-  "export_mismatches": [],
   "broken_local_report_links": [],
-  "primary_camera_frames_reviewed": 360
+  "primary_camera_frames_reviewed": 360,
+  "original_export_verification": {
+    "artifacts_checked": 441,
+    "mismatches": [],
+    "stage": "Before video compression; published MP4 hashes intentionally differ from original recordings."
+  },
+  "video_compression": {
+    "videos_checked": 261,
+    "original_bytes": 1538809959,
+    "published_bytes": 341077809,
+    "largest_video_bytes": 15042643,
+    "reduction_percent": 77.8,
+    "current_campaign_videos": 93,
+    "current_campaign_video_bytes": 225997424,
+    "all_under_20MB": true,
+    "all_faststart": true,
+    "original_recordings_unchanged": true,
+    "resolution_frame_rate_frame_count_duration_preserved": true
+  }
 }

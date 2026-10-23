@@ -2,3 +2,4 @@
 *.pth
 __pycache__/
 *.tmp
+*.tmp.mp4

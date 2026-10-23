@@ -34,10 +34,12 @@ jobs:
           assert Path(campaign).name == campaign and campaign not in (".", "..")
           site = Path("_site")
           site.mkdir()
-          for name in ("index.html", "live.json"):
+          for name in ("index.html", "live.json", "video_compression.json"):
               shutil.copy2(name, site / name)
           for name in ("data", "videos"):
               shutil.copytree(Path(name) / campaign, site / name / campaign)
+          for video in site.rglob("*.mp4"):
+              assert video.stat().st_size < 20_000_000, f"Video exceeds 20 MB: {video}"
           (site / ".nojekyll").touch()
           size = sum(path.stat().st_size for path in site.rglob("*") if path.is_file())
           print(f"Publishing {campaign}: {size / 1024**2:.1f} MiB")

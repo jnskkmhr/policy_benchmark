@@ -26,3 +26,11 @@ Early task terminations and solver failures remain visible. This is one episode 
 Completed: **72 primary recordings**, **3 separate capacity-check reruns**, and **18 time-aligned 2×2 comparison videos**, using reduced-order policy `no87uwhe`. Built-in asset tracking keeps the camera near the robot; flat and tilting terrain use a closer, lower view. Downhill uses a centerline view to avoid the retaining walls. Previous campaigns are preserved separately.
 
 [Validation results](data/four_policy_20261022_v3/validation.json) · [Camera frame review](data/four_policy_20261022_v3/camera_review.json) · [Wall visibility check](data/four_policy_20261022_v3/wall_visibility.json)
+
+Published videos use H.264 with fast-start metadata and are each under **20 MB** (20,000,000 bytes). Resolution, frame rate, frame count, and duration are preserved. Original recordings remain in the IsaacLab benchmark directory. [Compression manifest](video_compression.json) records original and published sizes and hashes.
+
+To compress new exports before pushing (matching relative paths are required):
+
+```bash
+python3 tools/compress_videos.py /home/jkamohara/isaac/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/contrib/g1_29dof_mpm/benchmark/videos
+```
