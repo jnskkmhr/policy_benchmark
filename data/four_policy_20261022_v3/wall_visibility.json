@@ -87,9 +87,58 @@
     },
     {
       "terrain": "descending",
+      "material": "basalt_like",
+      "policy": "mpm_flat",
+      "ankle_segments_tested": 494,
+      "wall_occluded_segments": 0
+    },
+    {
+      "terrain": "descending",
+      "material": "basalt_like",
+      "policy": "mpm_rough",
+      "ankle_segments_tested": 326,
+      "wall_occluded_segments": 0
+    },
+    {
+      "terrain": "descending",
+      "material": "basalt_like",
+      "policy": "scratch",
+      "ankle_segments_tested": 350,
+      "wall_occluded_segments": 0
+    },
+    {
+      "terrain": "descending",
+      "material": "basalt_like",
+      "policy": "soft_contact",
+      "ankle_segments_tested": 636,
+      "wall_occluded_segments": 100
+    },
+    {
+      "terrain": "descending",
       "material": "mild_sand",
       "policy": "scratch",
       "ankle_segments_tested": 558,
+      "wall_occluded_segments": 0
+    },
+    {
+      "terrain": "descending",
+      "material": "mild_sand",
+      "policy": "soft_contact",
+      "ankle_segments_tested": 490,
+      "wall_occluded_segments": 0
+    },
+    {
+      "terrain": "dune",
+      "material": "basalt_like",
+      "policy": "mpm_flat",
+      "ankle_segments_tested": 1100,
+      "wall_occluded_segments": 0
+    },
+    {
+      "terrain": "dune",
+      "material": "basalt_like",
+      "policy": "soft_contact",
+      "ankle_segments_tested": 748,
       "wall_occluded_segments": 0
     }
   ]
