@@ -1,0 +1,88 @@
+{
+  "steps": [
+    {
+      "foot": 1,
+      "start_s": 2.36,
+      "end_s": 2.42,
+      "step_duration_s": 0.06000000000000005,
+      "step_length_m": 0.04395484924316406
+    },
+    {
+      "foot": 0,
+      "start_s": 2.42,
+      "end_s": 2.8000000000000003,
+      "step_duration_s": 0.38000000000000034,
+      "step_length_m": 0.3503096103668213
+    },
+    {
+      "foot": 1,
+      "start_s": 2.8000000000000003,
+      "end_s": 3.08,
+      "step_duration_s": 0.2799999999999998,
+      "step_length_m": 0.5037176609039307
+    },
+    {
+      "foot": 0,
+      "start_s": 3.08,
+      "end_s": 3.34,
+      "step_duration_s": 0.2599999999999998,
+      "step_length_m": 0.4953653812408447
+    },
+    {
+      "foot": 1,
+      "start_s": 3.34,
+      "end_s": 3.52,
+      "step_duration_s": 0.18000000000000016,
+      "step_length_m": 0.2919522523880005
+    },
+    {
+      "foot": 0,
+      "start_s": 3.52,
+      "end_s": 4.1,
+      "step_duration_s": 0.5799999999999996,
+      "step_length_m": 1.1253845691680908
+    }
+  ],
+  "swings": [
+    {
+      "foot": 0,
+      "start_s": 2.44,
+      "end_s": 2.8000000000000003,
+      "swing_duration_s": 0.3600000000000003,
+      "clearance_cm": -13.463665843009942,
+      "swing_lift_cm": 14.400627017021183
+    },
+    {
+      "foot": 0,
+      "start_s": 2.9,
+      "end_s": 3.34,
+      "swing_duration_s": 0.43999999999999995,
+      "clearance_cm": -4.4849300384521396,
+      "swing_lift_cm": 21.992276906967163
+    },
+    {
+      "foot": 0,
+      "start_s": 3.42,
+      "end_s": 4.1,
+      "swing_duration_s": 0.6799999999999997,
+      "clearance_cm": 0.8962821960449396,
+      "swing_lift_cm": 29.070632457733158
+    },
+    {
+      "foot": 1,
+      "start_s": 2.66,
+      "end_s": 3.08,
+      "swing_duration_s": 0.41999999999999993,
+      "clearance_cm": -4.635094404220574,
+      "swing_lift_cm": 21.197504997253418
+    },
+    {
+      "foot": 1,
+      "start_s": 3.16,
+      "end_s": 3.52,
+      "swing_duration_s": 0.3599999999999999,
+      "clearance_cm": -3.5641503334045255,
+      "swing_lift_cm": 24.258911609649658
+    }
+  ]
+}
