@@ -191,7 +191,11 @@
           0.3
         ],
         "focal_length": 10.0,
-        "background_color": null,
+        "background_color": [
+          0.3,
+          0.55,
+          0.82
+        ],
         "origin_type": "world",
         "origin_env_index": 0,
         "origin_track_path": null,
@@ -211,7 +215,16 @@
         "live_plots_update_interval": 5,
         "visualizer_type": "newton_rtx",
         "enable_picking": true,
-        "render_settings": {}
+        "render_settings": {
+          "omni:rtx:rt:ambientLight:color": [
+            "Color3f",
+            [
+              0.5,
+              0.5,
+              0.5
+            ]
+          ]
+        }
       }
     ],
     "default_visualizer_cfg": null
@@ -906,6 +919,46 @@
           0.0,
           0.0,
           1.0
+        ]
+      },
+      "collision_group": 0,
+      "debug_vis": false,
+      "disable_shape_checks": null
+    },
+    "benchmark_fill_light": {
+      "class_type": "isaaclab.assets.asset:Asset",
+      "cloning_contexts": null,
+      "prim_path": "/World/BenchmarkFillLight",
+      "spawn": {
+        "func": "isaaclab.sim.spawners.lights.lights:spawn_light",
+        "visible": true,
+        "semantic_tags": null,
+        "copy_from_source": true,
+        "spawn_path": null,
+        "prim_type": "DistantLight",
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enable_color_temperature": false,
+        "color_temperature": 6500.0,
+        "normalize": false,
+        "exposure": 0.0,
+        "intensity": 1500.0,
+        "angle": 0.53
+      },
+      "init_state": {
+        "pos": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rot": [
+          -0.06645228,
+          -0.37686961,
+          -0.16042999,
+          0.90984373
         ]
       },
       "collision_group": 0,

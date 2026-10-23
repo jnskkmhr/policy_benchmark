@@ -84,34 +84,6 @@
       "policy": "soft_contact",
       "ankle_segments_tested": 312,
       "wall_occluded_segments": 0
-    },
-    {
-      "terrain": "descending",
-      "material": "basalt_like",
-      "policy": "mpm_flat",
-      "ankle_segments_tested": 462,
-      "wall_occluded_segments": 0
-    },
-    {
-      "terrain": "descending",
-      "material": "basalt_like",
-      "policy": "mpm_rough",
-      "ankle_segments_tested": 546,
-      "wall_occluded_segments": 0
-    },
-    {
-      "terrain": "descending",
-      "material": "basalt_like",
-      "policy": "scratch",
-      "ankle_segments_tested": 430,
-      "wall_occluded_segments": 0
-    },
-    {
-      "terrain": "descending",
-      "material": "basalt_like",
-      "policy": "soft_contact",
-      "ankle_segments_tested": 740,
-      "wall_occluded_segments": 0
     }
   ]
 }
