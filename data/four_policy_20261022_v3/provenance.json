@@ -75,8 +75,8 @@
   "supersedes": "four_policy_20261022_v2",
   "revision_reason": "Closer built-in robot asset tracking requested; keep no87uwhe and 2x2 comparisons.",
   "benchmark_scripts_sha256": {
-    "source/isaaclab_tasks/isaaclab_tasks/contrib/g1_29dof_mpm/benchmark_2/run_comparison.py": "0379a1ffa335838ac7367854e891b0b12b6b6f19ebc843df38a2195cedbb2733",
-    "source/isaaclab_tasks/isaaclab_tasks/contrib/g1_29dof_mpm/benchmark_2/analyze_comparison.py": "82978c5ea9c32fbbb5ad2914e50c22c39302b8a5084b605f9f69d11196fb49f4"
+    "source/isaaclab_tasks/isaaclab_tasks/contrib/g1_29dof_mpm/benchmark_2/run_comparison.py": "8e118fb053935442f827914231a8d4650d6517d621d47ba8c598772a4bc6fca8",
+    "source/isaaclab_tasks/isaaclab_tasks/contrib/g1_29dof_mpm/benchmark_2/analyze_comparison.py": "eef1d953a61723f11c9c1f51213f4455b62d9f94bbe78ba4dc6e16860283552a"
   },
   "camera_reference": "benchmark/videos/rough/comparison_mild_sand.mp4",
   "camera_adjustment": {
@@ -99,6 +99,11 @@
       -2,
       1.4,
       1.25
+    ],
+    "descending_eye": [
+      -2.4,
+      0,
+      2.0
     ]
   },
   "downhill_fill_light": "Distant light, intensity 1500, quaternion xyzw (-0.06645228, -0.37686961, -0.16042999, 0.90984373); ambient color (0.5, 0.5, 0.5). Rendering only."
