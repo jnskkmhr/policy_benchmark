@@ -1,1 +1,13 @@
-[]
+[
+  {
+    "terrain": "ascending",
+    "policy": "mpm_flat",
+    "material": "soft_sand",
+    "outcome": "terminated",
+    "duration_s": 9.3,
+    "terminal_terms": [
+      "outside_workspace"
+    ],
+    "artifact_path": "capacity_retries/ascending/soft_sand__mpm_flat__seed42"
+  }
+]

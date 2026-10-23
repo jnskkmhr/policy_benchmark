@@ -8,6 +8,9 @@ One episode per policy/material, seed 42. Early terminations remain included.
 |---|---|---|---:|---:|---:|---:|---:|
 | Stiff cohesive | Reduced order (no87uwhe) | crossed sand bed | 7.400 | 4.920 | 0.373 | 0.513 | 1.111 |
 | Stiff cohesive | MPM flat finetune | Stopped: bad_orientation | 4.620 | 2.000 | 0.900 | 0.460 | 2.789 |
+| Stiff cohesive | MPM rough finetune | crossed sand bed | 5.460 | 2.840 | 1.254 | 0.433 | 2.342 |
+| Stiff cohesive | MPM scratch | Stopped: outside_workspace | 4.300 | 1.900 | 0.710 | 0.484 | 1.856 |
+| Mild sand | Reduced order (no87uwhe) | Stopped: bad_orientation | 4.840 | 2.420 | 1.132 | 0.393 | 1.941 |
 
 ![Tracking](tracking.png)
 
@@ -17,6 +20,9 @@ One episode per policy/material, seed 42. Early terminations remain included.
 |---|---|---:|---:|---:|---:|---:|
 | Stiff cohesive | Reduced order (no87uwhe) | 15 / 18 | 0.227 ± 0.095 | 0.237 ± 0.291 | 8.613 ± 5.102 | 8.196 ± 5.040 |
 | Stiff cohesive | MPM flat finetune | 5 / 5 | 0.208 ± 0.155 | 0.348 ± 0.584 | 24.152 ± 13.852 | 22.718 ± 13.349 |
+| Stiff cohesive | MPM rough finetune | 9 / 8 | 0.233 ± 0.079 | 0.415 ± 0.139 | 23.995 ± 6.138 | 23.825 ± 6.346 |
+| Stiff cohesive | MPM scratch | 3 / 4 | 0.227 ± 0.041 | 0.631 ± 0.056 | 21.223 ± 11.183 | 21.100 ± 10.291 |
+| Mild sand | Reduced order (no87uwhe) | 3 / 3 | 0.540 ± 0.400 | 0.985 ± 0.865 | 7.510 ± 6.061 | 0.747 ± 0.549 |
 
 ![Gait](gait.png)
 

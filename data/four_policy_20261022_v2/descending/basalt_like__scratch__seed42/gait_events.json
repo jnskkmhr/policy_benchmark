@@ -1,0 +1,59 @@
+{
+  "steps": [
+    {
+      "foot": 0,
+      "start_s": 2.6,
+      "end_s": 2.82,
+      "step_duration_s": 0.21999999999999975,
+      "step_length_m": 0.6133297681808472
+    },
+    {
+      "foot": 1,
+      "start_s": 3.2800000000000002,
+      "end_s": 3.46,
+      "step_duration_s": 0.17999999999999972,
+      "step_length_m": 0.5727870464324951
+    },
+    {
+      "foot": 0,
+      "start_s": 3.72,
+      "end_s": 4.0,
+      "step_duration_s": 0.2799999999999998,
+      "step_length_m": 0.7075569033622742
+    }
+  ],
+  "swings": [
+    {
+      "foot": 0,
+      "start_s": 2.94,
+      "end_s": 3.2800000000000002,
+      "swing_duration_s": 0.3400000000000003,
+      "clearance_cm": 34.26262259483339,
+      "swing_lift_cm": 32.789367437362685
+    },
+    {
+      "foot": 0,
+      "start_s": 3.4,
+      "end_s": 4.0,
+      "swing_duration_s": 0.6000000000000001,
+      "clearance_cm": 7.491378784179714,
+      "swing_lift_cm": 8.484779596328751
+    },
+    {
+      "foot": 1,
+      "start_s": 2.68,
+      "end_s": 3.46,
+      "swing_duration_s": 0.7799999999999998,
+      "clearance_cm": 29.97556149959566,
+      "swing_lift_cm": 29.544720649719245
+    },
+    {
+      "foot": 1,
+      "start_s": 3.52,
+      "end_s": 3.72,
+      "swing_duration_s": 0.20000000000000018,
+      "clearance_cm": 13.160684108734156,
+      "swing_lift_cm": 13.582391738891609
+    }
+  ]
+}
