@@ -2,7 +2,7 @@
 
 Replaces the previous camera-obstructed recordings. The reduced-order policy is now `no87uwhe`. All results below come from new rollouts; the previous campaign is retained separately.
 
-**Recorded 67 of 72 conditions:** four policies × three materials × six Play tasks.
+**Recorded 69 of 72 conditions:** four policies × three materials × six Play tasks.
 
 ## Results
 
@@ -15,7 +15,7 @@ A completed crossing reaches the far side of the sand bed. A completed tilting t
 | [descending](descending/report.md) | 1/3 | 1/3 | 2/3 | 0/3 |
 | [dune](dune/report.md) | 2/3 | 3/3 | 3/3 | 3/3 |
 | [standing tilt](standing_tilt/report.md) | 0/3 | 1/3 | 2/3 | 3/3 |
-| [walking tilt](walking_tilt/report.md) | 0/3 | 3/3 | 0/0 recorded | 1/1 recorded |
+| [walking tilt](walking_tilt/report.md) | 0/3 | 3/3 | 1/1 recorded | 2/2 recorded |
 
 **Failures and stops:**
 

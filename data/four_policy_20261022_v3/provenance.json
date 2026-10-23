@@ -106,5 +106,7 @@
       2.0
     ]
   },
-  "downhill_fill_light": "Distant light, intensity 1500, quaternion xyzw (-0.06645228, -0.37686961, -0.16042999, 0.90984373); ambient color (0.5, 0.5, 0.5). Rendering only."
+  "downhill_fill_light": "Distant light, intensity 1500, quaternion xyzw (-0.06645228, -0.37686961, -0.16042999, 0.90984373); ambient color (0.5, 0.5, 0.5). Rendering only.",
+  "downhill_recording_script_sha256": "b24eaebcd04c25087f7e39f3757e748d8e3c01d3d29fa666f1eca8f782b66b0d",
+  "downhill_camera_revision": "All 12 downhill recordings replaced with eye=(-2.4,0,2.0), built-in asset tracking. Earlier oblique recordings preserved in /tmp/benchmark_v3_downhill_backup."
 }
