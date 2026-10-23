@@ -2,7 +2,7 @@
 
 Replaces the previous camera-obstructed recordings. The reduced-order policy is now `no87uwhe`. All results below come from new rollouts; the previous campaign is retained separately.
 
-**Recorded 69 of 72 conditions:** four policies × three materials × six Play tasks.
+**Recorded 72 of 72 conditions:** four policies × three materials × six Play tasks.
 
 ## Results
 
@@ -15,7 +15,7 @@ A completed crossing reaches the far side of the sand bed. A completed tilting t
 | [descending](descending/report.md) | 1/3 | 1/3 | 2/3 | 0/3 |
 | [dune](dune/report.md) | 2/3 | 3/3 | 3/3 | 3/3 |
 | [standing tilt](standing_tilt/report.md) | 0/3 | 1/3 | 2/3 | 3/3 |
-| [walking tilt](walking_tilt/report.md) | 0/3 | 3/3 | 1/1 recorded | 2/2 recorded |
+| [walking tilt](walking_tilt/report.md) | 0/3 | 3/3 | 3/3 | 3/3 |
 
 **Failures and stops:**
 
@@ -75,3 +75,13 @@ uv run --no-sync python source/isaaclab_tasks/isaaclab_tasks/contrib/g1_29dof_mp
 
 The runner resumes by skipping completed conditions. To rerun a condition, use a fresh campaign directory. `--prepare` resolves the latest W&B checkpoint again; the supplied manifest is the frozen record for these results.
 [Dependency versions and source hashes](provenance.json).
+
+## Grid-capacity diagnostics
+
+These additional trials increase leaf-node allocation from 8,192 to 32,768; physical parameters and commands are unchanged. They do not replace the original 72-condition table.
+
+| Task | Policy | Material | Retry outcome | Duration (s) | Data / video |
+|---|---|---|---|---:|---|
+| ascending | mpm_flat | soft_sand | time_limit: time_out | 13.00 | [Metadata](capacity_retries/ascending/soft_sand__mpm_flat__seed42/metadata.json) · [Video](../../videos/four_policy_20261022_v3/capacity_retries/ascending/soft_sand__mpm_flat__seed42/rollout.mp4) |
+| ascending | mpm_rough | soft_sand | time_limit: time_out | 13.00 | [Metadata](capacity_retries/ascending/soft_sand__mpm_rough__seed42/metadata.json) · [Video](../../videos/four_policy_20261022_v3/capacity_retries/ascending/soft_sand__mpm_rough__seed42/rollout.mp4) |
+| ascending | scratch | soft_sand | time_limit: time_out | 13.00 | [Metadata](capacity_retries/ascending/soft_sand__scratch__seed42/metadata.json) · [Video](../../videos/four_policy_20261022_v3/capacity_retries/ascending/soft_sand__scratch__seed42/rollout.mp4) |

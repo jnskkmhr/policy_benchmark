@@ -1,1 +1,35 @@
-[]
+[
+  {
+    "terrain": "ascending",
+    "policy": "mpm_flat",
+    "material": "soft_sand",
+    "outcome": "time_limit",
+    "duration_s": 13.0,
+    "terminal_terms": [
+      "time_out"
+    ],
+    "artifact_path": "capacity_retries/ascending/soft_sand__mpm_flat__seed42"
+  },
+  {
+    "terrain": "ascending",
+    "policy": "mpm_rough",
+    "material": "soft_sand",
+    "outcome": "time_limit",
+    "duration_s": 13.0,
+    "terminal_terms": [
+      "time_out"
+    ],
+    "artifact_path": "capacity_retries/ascending/soft_sand__mpm_rough__seed42"
+  },
+  {
+    "terrain": "ascending",
+    "policy": "scratch",
+    "material": "soft_sand",
+    "outcome": "time_limit",
+    "duration_s": 13.0,
+    "terminal_terms": [
+      "time_out"
+    ],
+    "artifact_path": "capacity_retries/ascending/soft_sand__scratch__seed42"
+  }
+]

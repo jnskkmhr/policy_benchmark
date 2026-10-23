@@ -1,0 +1,16 @@
+{
+  "primary_conditions": 72,
+  "capacity_diagnostics": 3,
+  "individual_videos": 75,
+  "comparison_videos": 18,
+  "png_figures": 18,
+  "pdf_figures": 18,
+  "issues": [],
+  "script_lint": "Ruff and Ruff format passed",
+  "repository_hook_limit": "Full format command fails existing unrelated changelog-fragment checks",
+  "browser_check": "Headless Chrome: 72/72 conditions, final campaign, versioned comparison video URL; composite video confirmed 2x2 by frame inspection and 1920x1120 dimensions.",
+  "exported_artifact_hashes_checked": 441,
+  "export_mismatches": [],
+  "broken_local_report_links": [],
+  "primary_camera_frames_reviewed": 360
+}

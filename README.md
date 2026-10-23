@@ -19,4 +19,6 @@ Checkpoint weights and W&B credentials are excluded.
 Each task's report includes individual and 2×2 videos, PNG/PDF figures, and measurement definitions.
 Early task terminations and solver failures remain visible. This is one episode per condition at seed 42.
 
-Recordings are being regenerated with closer built-in robot asset tracking and reduced-order policy `no87uwhe`. The previous campaign used an obstructed ramp camera and is retained under `data/four_policy_20261022`; do not use those videos to judge visibility. The live website shows only the corrected campaign.
+Completed: **72 primary recordings**, **3 separate capacity-check reruns**, and **18 time-aligned 2×2 comparison videos**, using reduced-order policy `no87uwhe`. Built-in asset tracking keeps the camera near the robot; flat and tilting terrain use a closer, lower view. Downhill uses a centerline view to avoid the retaining walls. Previous campaigns are preserved separately.
+
+[Validation results](data/four_policy_20261022_v3/validation.json) · [Camera frame review](data/four_policy_20261022_v3/camera_review.json) · [Wall visibility check](data/four_policy_20261022_v3/wall_visibility.json)
